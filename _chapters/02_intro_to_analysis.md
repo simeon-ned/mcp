@@ -2,7 +2,7 @@
 title: Analysis and Control
 author: Simeon Nedelchev
 date: 2019-04-28
-category: Jekyll
+category: chapters
 layout: post
 ---
 

@@ -1,8 +1,8 @@
 ---
-title: Analysis and Control
+title: State Space Modeling
 author: Simeon Nedelchev
-date: 2019-04-28
-category: Jekyll
+date: 2019-04-27
+category: chapters
 layout: post
 ---
 
