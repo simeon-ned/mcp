@@ -1,5 +1,5 @@
 ---
-title: Analysis and Control
+title: State Space Modeling 2
 author: Simeon Nedelchev
 date: 2019-04-28
 category: chapters
