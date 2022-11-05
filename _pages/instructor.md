@@ -2,7 +2,7 @@
 title: Instructor
 author: Simeon Nedelchev
 date: 2022-02-05
-category: Jekyll
+category: outline
 layout: post
 ---
 
