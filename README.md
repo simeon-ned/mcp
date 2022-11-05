@@ -4,7 +4,6 @@ title: Modern Control Paradigms
 permalink: /
 ---
 
-## **Modern Control Paradigms**
 ### **What this course is about?**
 This course is attempt to explore **modern control paradigms** in terms of **numerical methods** and **optimization**, while relaying on **fundamental theory**, however we will avoid proofs and deep theoretical reasoning, where it possible. (mainly due to time considerations and amount of material)       
 
