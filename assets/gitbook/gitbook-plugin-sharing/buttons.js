@@ -26,7 +26,7 @@ require(['gitbook', 'jquery'], function(gitbook, $) {
         },
         'telegram': {
             'label': 'Telegram',
-            'icon': 'fa fa-paper-plane',
+            'icon': 'fab fa-telegram',
             'onClick': function(e) {
                 e.preventDefault();
                 window.open('https://t.me');
