@@ -180,7 +180,7 @@ In robotics most of our systems are actually of second order, while the equation
 **Example: Mass-Spring-Damper**
 
 <p align="center">
-<img src="images/systems/mbk_eq.png" alt="drawing" width="60%" style="margin:auto"/>
+<img src="../assets/images/systems/mbk_eq.png" alt="drawing" width="60%" style="margin:auto"/>
 </p>
 
 Chosing the state to be $\mathbf{x} = [y,\dot{y}]^T$ one can formulate this system in state space as:
@@ -241,7 +241,7 @@ introduced by the designer. -->
 **Example: Nonlinear Pendulum**
 
 <p align="center">
-<img src="images/systems/pend_eq.png" alt="drawing" width="60%" style="margin:auto"/>
+<img src="../assets/images/systems/pend_eq.png" alt="drawing" width="60%" style="margin:auto"/>
 </p>
  
 

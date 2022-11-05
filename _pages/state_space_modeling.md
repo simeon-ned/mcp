@@ -1,7 +1,7 @@
 ---
 title: State Space Modeling
 author: Simeon Nedelchev
-date: 2019-04-27
+date: 2022-02-06
 category: chapters
 layout: post
 ---
