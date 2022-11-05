@@ -16,10 +16,11 @@ You could have the following [markdown attributes (supported by kramdown)][2]:
 Using a `{: .block-tip}` attribute:
 
 ```markdown
-> ##### TIP
+> ##### Example
 >
 > This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
 > this or a similar version after installation.
+> $$\dot{x} = f(x,u)$$
 {: .block-tip }
 ```
 

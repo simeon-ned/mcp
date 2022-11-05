@@ -1,5 +1,5 @@
 ---
-title: Why Jekyll with GitBook
+title: State Space Modeling
 author: Simeon Nedelchev
 date: 2019-04-27
 category: Jekyll
