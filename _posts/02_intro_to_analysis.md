@@ -1,7 +1,7 @@
 ---
-title: State Space Modeling
+title: Analysis and Control
 author: Simeon Nedelchev
-date: 2019-04-27
+date: 2019-04-28
 category: chapters
 layout: post
 ---
