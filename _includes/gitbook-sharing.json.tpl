@@ -5,7 +5,7 @@
                 "github": true,
                 "github_link": "https://github.com",
                 "telegram": true,
-                "telegram_link": "https://t.me",
+                "telegram_link": "https://t.me/simkasimka",
                 "instapaper": false,
                 "twitter": false,
                 "vk": false,
