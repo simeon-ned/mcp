@@ -1,7 +1,7 @@
 ---
 title: About
 author: Simeon Nedelchev
-date: 2022-02-01
+date: 2022-01-01
 category: outline
 layout: post
 ---
