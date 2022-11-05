@@ -24,10 +24,13 @@ Using a `{: .block-tip}` attribute:
 {: .block-tip }
 ```
 
-> ##### TIP
+> ##### Example
 >
 > This guide is last tested with @napi-rs/canvas^0.1.20, so make sure you have
-> $$\dot{x} = f(x,u)$$
+> 
+> $$
+>    \dot{x} = f(x,u)
+> $$
 {: .block-tip }
 
 ### Warnings
