@@ -1,10 +1,10 @@
 # Configurations
-title:            Modern Control Paradigms
+title:            MCP
 longtitle:        Modern Control Paradigms
 author:           Simeon Nedelchev
 email:            simkaned@gmail.com
 description: >
-  Build Jekyll site with the GitBook style.
+  The Online Lecture Notes on Modern Control paradigms course.
 
 version:          1.0
 gitbook_version:  3.2.3

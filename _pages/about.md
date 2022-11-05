@@ -27,7 +27,7 @@ The course is consist of following parts:
 * **Other topics:** (1 week): Here we will briefly review the ideas and the other interesting techniques, including numerical analysis, including differential flatness, state observers and sum-of-squares programming etc.
 
 
-* **Term project presentation:** (final exam): In the end you will apply one of the studied concepts and prepare the short (10-20 min) presentation.
+* **Term project presentation** (final exam): In the end you will apply one of the studied concepts and prepare the short (10-20 min) presentation.
 
 ### **Course organization**
 * We will have mixed lecture/practice format
@@ -37,7 +37,7 @@ The course is consist of following parts:
 
 
 
-### **Prerequisites:**
+### **Prerequisites**
 
 In order to be able to successfully go over course material and pass the final you must match the following **requirements**:
 * It should **NOT** be your first course in control
