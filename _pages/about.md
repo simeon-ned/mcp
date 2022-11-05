@@ -1,36 +1,10 @@
 ---
 title: About
-author: Tao He
+author: Simeon Nedelchev
 date: 2022-02-04
 category: Jekyll
 layout: post
 ---
-## **Modern Control Paradigms:**
-### **Introduction and Course Outline**
-
-### **Instructor**
-
-**Name:** Simeon Nedelchev
-**Background:**
-* **MSTU STANKIN** (Bachelor/Master in Robotics 2018) 
-* **Korea University of Technology And Education** (KoreaTech) (Master ME 2019), Research fellow 'BioRobotics' lab
-* **Innopolis University** (PhD), Senior Instructor, Research fellow of robotics lab
-
-
-
-
-**Research interests:**
-
-*   **Control**: Nonlinear, Robust, Adaptive, Energy based, Noncolocated and Underactuated, with focus on discrete-time and physically inspired numerical methods.
-*   **Online Identification and Estimation**: Moving Horizon Estimators, Sliding Mode Observers.
-*  **Analytical Mechanics and Dynamical Systems**:
-Dynamical Modeling, Limit Cycles, Constrained Dynamics (UK), Computational mechanics.
-*  **Applied Optimization**:
-Linear, Quadratic, and Nonlinear programming, Dynamical programming, Optimal Control, Optimal Mechanical Design. 
-
-Feel free to contact me in person (office 105) or via [telegram](https://t.me/simkasimka) and [mail](https://t.me/simkasimka) if you face any problems with the course or would like to do research and work on hardware
-
-### **What this course is about?**
 This course is attempt to explore **modern control paradigms** in terms of **numerical methods** and **optimization**, while relaying on **fundamental theory**, however we will avoid proofs and deep theoretical reasoning, where it possible. (mainly due to time considerations and amount of material)       
 
 The material of this course is based on technologies which in my humble opinion are theoretically interesting and practically significant. This in no way means that the reviewed algorithms will be the recipe for resolving all your control problems. However it may give you some view on the modern control field.
@@ -43,10 +17,7 @@ The material of this course is based on technologies which in my humble opinion 
 The course is consist of following parts:
 
 
-
 * **Introduction and Modeling** (1 week): recap the concept of dynamical system, and discuss some issues related to practical implementation of controllers.
-
-
 
 * **Recview of System Analysis and Control** (1 week): review of system analysis, Lyapunov theory, stability, and linear and nonlinear control, with focus on numerical tools.
 
@@ -54,7 +25,6 @@ The course is consist of following parts:
 
 
 * **Identification and Data Driven Methods** (2 weeks): In this chapter we will study the algorithms that allow us to find the parameters of abstract models based on the measurements from real plant and even build model from the scratch.  
-
 
 * **Other topics:** (1 week): Here we will briefly review the ideas and the other interesting techniques, including numerical analysis, including differential flatness, state observers and sum-of-squares programming etc.
 
@@ -81,14 +51,13 @@ In order to be able to successfully go over course material and pass the final y
 The material of this course is based on technologies which, in my humble opinion, are theoretically interesting and practically significant. This in no way means that the proposed algorithms are the recipe for resolving all your control problems.
 
 
-
 ### **Hand books:**
 
 Some content of this course is described in the following text books:
 
 
 <p align="center">
-<img src="../_includes/_images/books/references.png" alt="drawing" width="80%" style="margin:auto"/>
+<img src="../assets/images/books/references.png" alt="drawing" width="80%" style="margin:auto"/>
 </p>
 
 

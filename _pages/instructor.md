@@ -1,16 +1,15 @@
 ---
-title: Contact
-author: Tao He
+title: Instructor
+author: Simeon Nedelchev
 date: 2022-02-05
 category: Jekyll
 layout: post
 ---
 
-
-### **Instructor**
-
 **Name:** Simeon Nedelchev
+
 **Background:**
+
 * **MSTU STANKIN** (Bachelor/Master in Robotics 2018) 
 * **Korea University of Technology And Education** (KoreaTech) (Master ME 2019), Research fellow 'BioRobotics' lab
 * **Innopolis University** (PhD), Senior Instructor, Research fellow of robotics lab
