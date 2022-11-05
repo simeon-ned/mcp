@@ -1,5 +1,11 @@
-## **Fundamentals of Robot Control:**
-### **Lecture 1: Robotic System, Models, Dynamical Systems and State Space**
+---
+title: Why Jekyll with GitBook
+author: Simeon Nedelchev
+date: 2019-04-27
+category: Jekyll
+layout: post
+---
+
 
 During our course we will discuss **control methods over robots**, our task can be summarized as follows: to **design a control algorithms** that will cause the **controlled object to perform the desired behavior** even in the **presence of possible disturbances**.  However before we move further let us briefly discuss the overall structure of **robotic control system**
 
