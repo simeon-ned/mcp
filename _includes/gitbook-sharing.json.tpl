@@ -7,7 +7,7 @@
                 "telegram": true,
                 "telegram_link": "https://t.me",
                 "instapaper": false,
-                "twitter": true,
+                "twitter": false,
                 "vk": false,
                 "weibo": false
             },
