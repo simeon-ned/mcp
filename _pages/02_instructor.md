@@ -25,3 +25,4 @@ Dynamical Modeling, Limit Cycles, Constrained Dynamics (UK), Computational mecha
 Linear, Quadratic, and Nonlinear programming, Dynamical programming, Optimal Control, Optimal Mechanical Design. 
 
 Feel free to contact me in person (office 105) or via [telegram](https://t.me/simkasimka) and [mail](https://t.me/simkasimka) if you face any problems with the course or would like to do research and work on hardware
+

@@ -7,7 +7,7 @@ layout: post
 permalink: /info/materials.html
 ---
 
-The course material is organized in the form of interactive lectures with mixture of theory and simple Python code snippets. To access the slides, just open the link in your browser, we are working on providing a code-less html version as well.  In case you want to use the lectures in interactive mode (with the possibility to run the code), it is necessary to download the jupyter-notebook version of the slides and install the [Python's rise](https://rise.readthedocs.io/en/stable/). 
+The course material is organized in the form of **interactive lectures** with mixture of theory and simple Python code snippets. To access the slides, just open the link in your browser, we are working on providing a code-less html version as well.  In case you want to use the lectures in interactive mode (with the possibility to run the code), it is necessary to download the jupyter-notebook version of the slides and install the [Python's rise](https://rise.readthedocs.io/en/stable/). 
 
 For majority of the slides there are also notes, both online and pdf formats (note that pdf is automatically generated, so some bugs are possible). Furthermore, for your convenience we have uploaded the jupyter notebooks to [google colab](https://colab.research.google.com/) so you can try the interactive part of the class without any additional installations directly in your browser. 
 
@@ -23,8 +23,7 @@ For majority of the slides there are also notes, both online and pdf formats (no
 **Description:** The introduction to modeling and state space representation, the mechanical systems, several examples of state space models
 
 
-**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]
-**Notes:** online, google colab, [pdf][1_notes_pdf]
+**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter] | **Notes:** online, google colab, [pdf][1_notes_pdf]
 <!-- **Supplementary material:** 
 python code, jupyter notebook and google colab on different aspects of simulation   -->
 
@@ -41,8 +40,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 **Description:** The basics of analysis and control of linear and nonlinear systems, stability, pole placement, linearization and lyapunov analysis
 [random value]
 
-**Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter]
-**Notes:** [online][2_notes_online], google colab, [pdf][2_notes_pdf]
+**Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter] | **Notes:** [online][2_notes_online], google colab, [pdf][2_notes_pdf]
 
 **Supplementary material:** 
 1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 

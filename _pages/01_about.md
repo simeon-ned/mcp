@@ -19,7 +19,7 @@ The course is consist of following parts:
 
 * **Introduction and Modeling** (1 week): recap the concept of dynamical system, and discuss some issues related to practical implementation of controllers.
 
-* **Recview of System Analysis and Control** (1 week): review of system analysis, Lyapunov theory, stability, and linear and nonlinear control, with focus on numerical tools.
+* **Review of System Analysis and Control** (1 week): review of system analysis, Lyapunov theory, stability, and linear and nonlinear control, with focus on numerical tools.
 
 * **Optimization in Planning and Control** (2 weeks): overview the optimization driven methods dedicated for planning and control of linear and nonlinear systems, MPC and Lyapunov inspired methods.
 
@@ -28,14 +28,14 @@ The course is consist of following parts:
 
 * **Other topics:** (1 week): Here we will briefly review the ideas and the other interesting techniques, including numerical analysis, including differential flatness, state observers and sum-of-squares programming etc.
 
-
+<!-- 
 * **Term project presentation** (final exam): In the end you will apply one of the studied concepts and prepare the short (10-20 min) presentation.
 
 ### **Course organization**
 * We will have mixed lecture/practice format
 * Almost each lecture is based on **research paper** which I will share with you.
 * I highly encourage you to do **hand written** notes and not miss classes
-* In the end each of you will have **presentation** (term project or paper/concept review)
+* In the end each of you will have **presentation** (term project or paper/concept review) -->
 
 ### Prerequisites
 
