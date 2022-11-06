@@ -9,7 +9,7 @@ permalink: /info/citing.html
 
 <!-- ### Citing Course -->
 
-The course content was selected and organized by me and a few students (mainly responsible for the technical part of the course, many thanks to them). We will be glad if these materials will help you in your teaching activities, and will be even happier if you will refer to [this website](https://simeon-ned.github.io/mcp/) or my [personal page](https://simeon-ned.github.io/). You can also cite this course in your thesis or publications.
+The course content was selected and organized by me and a few students (mainly responsible for the technical part of the course, many thanks to them). We will be glad if these materials will help you in your teaching activities, and will be even happier if you will refer to [this website](https://simeon-ned.github.io/mcp/) or my personal page. You can also cite this course in your thesis or publications.
 
 <!-- ### On Collaboration
 
