@@ -20,7 +20,7 @@ The course material is organized in the form of **interactive lectures** with mi
 <!-- ### Lectures -->
 ---- 
 
-#### Lecture 1: Modeling and State Space 
+### Lecture 1: Modeling and State Space 
 [1_slides_online]: https://simeon-ned.github.io/mcp/lectures/01_modeling/01_modeling.slides.html
 [1_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/01_modeling/01_modeling.ipynb
 [1_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/01_modeling/01_modeling.pdf
@@ -43,7 +43,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 ---- 
 
 
-#### Lecture 2: Basics of Analysis and Control
+### Lecture 2: Basics of Analysis and Control
 [2_slides_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html
 [2_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.ipynb
 [2_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.pdf
@@ -82,7 +82,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 <!-- Eventually we will also the course with a variety of practical exercises and tutorials.  -->
 
 
-> ##### NOTE
+<!-- > ##### NOTE -->
 >
 > The content of the lectures is constantly adapted and supplemented, and furthermore some additional material will appear on this site over time, which was not presented in class (mainly due to time constraints).
 {: .block-warning }
