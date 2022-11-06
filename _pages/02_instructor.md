@@ -1,9 +1,10 @@
 ---
-title: Instructor
+title: Instructors
 author: Simeon Nedelchev
 date: 2022-01-02
 category: outline
 layout: post
+permalink: /info/instructor.html
 ---
 
 **Name:** Simeon Nedelchev

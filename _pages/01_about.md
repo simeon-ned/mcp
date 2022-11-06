@@ -4,13 +4,15 @@ author: Simeon Nedelchev
 date: 2022-01-01
 category: outline
 layout: post
+permalink: /info/about.html
 ---
+
 This course is attempt to explore **modern control paradigms** in terms of **numerical methods** and **optimization**, while relaying on **fundamental theory**, however we will avoid proofs and deep theoretical reasoning, where it possible. (mainly due to time considerations and amount of material)       
+
 
 The material of this course is based on technologies which in my humble opinion are theoretically interesting and practically significant. This in no way means that the reviewed algorithms will be the recipe for resolving all your control problems. However it may give you some view on the modern control field.
 
-
-### **Structure of the course**
+### Structure of the course
 
 The course is consist of following parts:
 
@@ -35,9 +37,7 @@ The course is consist of following parts:
 * I highly encourage you to do **hand written** notes and not miss classes
 * In the end each of you will have **presentation** (term project or paper/concept review)
 
-
-
-### **Prerequisites**
+### Prerequisites
 
 In order to be able to successfully go over course material and pass the final you must match the following **requirements**:
 * It should **NOT** be your first course in control

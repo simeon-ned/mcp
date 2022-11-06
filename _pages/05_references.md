@@ -1,9 +1,10 @@
 ---
 title: References
 author: Simeon Nedelchev
-date: 2022-01-03
+date: 2022-01-05
 category: outline
 layout: post
+permalink: /info/references.html
 ---
 <!-- ### **References** -->
 
