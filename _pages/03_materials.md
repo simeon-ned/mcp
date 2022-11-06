@@ -1,5 +1,5 @@
 ---
-title: Course Materials
+title: Materials
 author: Simeon Nedelchev
 date: 2022-01-03
 category: outline
@@ -18,6 +18,7 @@ The course material is organized in the form of **interactive lectures** with mi
 
 
 <!-- ### Lectures -->
+---- 
 
 #### Lecture 1: Modeling and State Space 
 [1_slides_online]: https://simeon-ned.github.io/mcp/lectures/01_modeling/01_modeling.slides.html
@@ -39,6 +40,7 @@ The course material is organized in the form of **interactive lectures** with mi
 <!-- **Supplementary material:** 
 python code, jupyter notebook and google colab on different aspects of simulation   -->
 
+---- 
 
 
 #### Lecture 2: Basics of Analysis and Control
@@ -62,6 +64,10 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 **Supplementary material:** 
 1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
 <!-- 2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+
+
+---- 
+
 
 
 <!-- #### Lecture 3: Fundamentals of Lyapunov Analysis 
