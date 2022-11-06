@@ -11,7 +11,7 @@ The course material is organized in the form of **interactive lectures** with mi
 
 
 
-> ##### 
+> ##### Format of Slides and Notes
 >
 >For majority of the slides there are also notes, both online and pdf formats (note that pdf is automatically generated, so some bugs are possible). Furthermore, for your convenience we have uploaded the jupyter notebooks to [google colab](https://colab.research.google.com/) so you can try the interactive part of the class without any additional installations directly in your browser. 
 {: .block-tip }

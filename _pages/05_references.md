@@ -17,7 +17,7 @@ Some content of this course is described in the following text books:
 
 
 <p align="center">
-<img src="../../assets/images/books/references.png" alt="drawing" width="80%" style="margin:auto"/>
+<img src="../assets/images/books/references.png" alt="drawing" width="80%" style="margin:auto"/>
 </p>
 
 
