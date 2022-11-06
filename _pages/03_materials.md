@@ -11,6 +11,7 @@ The course material is organized in the form of **interactive lectures** with mi
 
 For majority of the slides there are also notes, both online and pdf formats (note that pdf is automatically generated, so some bugs are possible). Furthermore, for your convenience we have uploaded the jupyter notebooks to [google colab](https://colab.research.google.com/) so you can try the interactive part of the class without any additional installations directly in your browser. 
 
+The content of the lectures is constantly adapted and supplemented, and furthermore some additional material will appear on this site over time, which was not presented in class (mainly due to time constraints).
 
 <!-- ### Lectures -->
 
@@ -54,8 +55,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 **Notes:** online html, markdown, pdf
 **Supplementary material:** python code, jupyter notebook and google colab on linearization based control of cart pole system -->
 
-
-The content of the lectures is constantly changing and supplemented, and furthermore some additional material will appear on this site over time, which was not presented in class (mainly due to time constraints). 
+ 
 
 <!-- Eventually we will also the course with a variety of practical exercises and tutorials.  -->
 
