@@ -32,7 +32,7 @@ The course material is organized in the form of **interactive lectures** with mi
 <div class="table-wrapper" markdown="block">
 
 |:-:|:-:|
-|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** [online][1_notes_online], google colab, [pdf][1_notes_pdf]|
+|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** online, google colab, [pdf][1_notes_pdf]|
 
 </div>
 
@@ -57,7 +57,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 <div class="table-wrapper" markdown="block">
 
 |:-:|:-:|
-|**Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter]|**Notes:** [online][2_notes_online], google colab, [pdf][2_notes_pdf]|
+|**Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter]|**Notes:** online, google colab, [pdf][2_notes_pdf]|
 
 </div>
 
