@@ -1,5 +1,5 @@
 ---
-title: Citing Course
+title: Citing
 author: Simeon Nedelchev
 date: 2022-01-04
 category: outline

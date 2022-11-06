@@ -5,6 +5,14 @@
       
       <link rel="stylesheet" href="file:////home/simeon/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.5/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
       
+      
+      
+      
+      
+      
+      
+      
+      
       <style>
       /**
  * prism.js Github theme based on GitHub's theme.
@@ -693,46 +701,6 @@ show<span class="token punctuation">(</span><span class="token punctuation">)</s
 <p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mover accent="true"><mi mathvariant="bold">x</mi><mo>&#x2D9;</mo></mover><mo>=</mo><mi mathvariant="bold">f</mi><mo stretchy="false">(</mo><mi mathvariant="bold">x</mi><mo separator="true">,</mo><mi mathvariant="bold">u</mi><mo stretchy="false">)</mo><mo>=</mo><mi mathvariant="bold">f</mi><mo stretchy="false">(</mo><mi mathvariant="bold">x</mi><mo separator="true">,</mo><mi mathvariant="bold-italic">&#x3C6;</mi><mo stretchy="false">(</mo><mi mathvariant="bold">x</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo>=</mo><msub><mi mathvariant="bold">f</mi><mi>c</mi></msub><mo stretchy="false">(</mo><mi mathvariant="bold">x</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\mathbf{\dot{x}} = \mathbf{f}(\mathbf{x},\mathbf{u})  =\mathbf{f}(\mathbf{x},\boldsymbol{\varphi}(\mathbf{x})) = \mathbf{f}_c(\mathbf{x})</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7079em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7079em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathbf">x</span></span><span style="top:-3.0134em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1597em;"><span class="mord mathbf">&#x2D9;</span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbf" style="margin-right:0.10903em;">f</span><span class="mopen">(</span><span class="mord mathbf">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathbf">u</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathbf" style="margin-right:0.10903em;">f</span><span class="mopen">(</span><span class="mord mathbf">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord"><span class="mord boldsymbol">&#x3C6;</span></span></span><span class="mopen">(</span><span class="mord mathbf">x</span><span class="mclose">))</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathbf" style="margin-right:0.10903em;">f</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.109em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">c</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathbf">x</span><span class="mclose">)</span></span></span></span></span></p>
 <p>now this system is unforced and may be analyzed as it is no control at all - basically we have changed the overall nature of plant - the governing dynamics.</p>
 <p>In the <strong>next lecture</strong> we will learn how to <strong>design the controller functions</strong> and analyze <strong>closed loop response</strong> with different <strong>numerical and analytical tools</strong>, while for today we will move to the practice when we will focus on the <strong>implementation side of the control system</strong>.</p>
-<h2 class="mume-header" id="practice-1-architecture-of-the-control-system-controlled-dynamical-system-as-multiprocessing-software"><strong>Practice 1: Architecture of The Control System, Controlled Dynamical System as Multiprocessing Software</strong></h2>
-
-<p>From point of view of control and software engineers we would like to dig more into <strong>implementation side</strong>.</p>
-<p>So far we have discussed that the purpose of <strong>control</strong> is to shape system in the way that it is <strong>display desired behavior</strong>. In paper everything is great, you just <strong>design the controller function</strong>, plug it to the <strong>dynamics and analyze the resulting system</strong>.</p>
-<p>But in practice in most cases the system of choice is described in continues time while controller is in descrete domain. This can be achived if simulation run considerably <strong>faster then controller</strong> and ideally in <strong>parallel</strong> to control process. Thus it is natural to run controller in the separate process or thread.</p>
-<p>Thus the overall software structure of the control system may be roughly described as follows:</p>
-<p align="center">
-<img src="images/schemes/controller_process.png" alt="drawing" width="70%" style="margin:auto">
-</p>
-<p>Let us implement this architecture with help of <code>lcm</code> (lightweight communications and marshalling ) library:</p>
-<ul>
-<li>
-<p>Install the <a href="https://lcm-proj.github.io/index.html">lcm library</a> and it&apos;s <a href="https://github.com/lcm-proj/lcm/tree/master/lcm-python">python</a> interface (I suggest to use virtualenv)</p>
-</li>
-<li>
-<p>Clone the <a href="https://github.com/SimkaNed/modern_control_paradigms">course repository</a> and go to <code>code/practice_01</code></p>
-</li>
-<li>
-<p>Study the <code>.lcm</code> files in <code>transport/messages/</code>, these are the structures for the <strong>controller</strong>, <strong>plant</strong> and <strong>user</strong> messages.</p>
-</li>
-<li>
-<p>Checkout the <code>pub.py</code> <code>sub.py</code>, this are examples of publisher and subscriber</p>
-</li>
-<li>
-<p>Implement the plant simulator, controller and user interface (<code>simulator.py</code>, <code>controller.py</code>, <code>commands.py</code>)</p>
-<ul>
-<li>use whatever dynamical system you want, for instance the nonlinear pendulum</li>
-<li>simulation can be done either with simple euler method or odeint 4-th order runge-kutta (check the code from lecture for reference)</li>
-<li>use whatever controller you familiar with (i.e PD, PID), or just apply the constant/random inputs for now</li>
-<li>simulator should not be interrupted by the controller and be blocked</li>
-<li>ensure that simulator is running faster then controller</li>
-</ul>
-</li>
-<li>
-<p>Implement simple logger and printing routine</p>
-</li>
-<li>
-<p><strong>BONUS</strong> implement online plotter and checkout the trajectories</p>
-</li>
-</ul>
 
       </div>
       
