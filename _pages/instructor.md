@@ -1,7 +1,7 @@
 ---
 title: Instructor
 author: Simeon Nedelchev
-date: 2022-02-02
+date: 2022-01-02
 category: outline
 layout: post
 ---
