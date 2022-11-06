@@ -23,8 +23,9 @@ The content of the lectures is constantly adapted and supplemented, and furtherm
 
 **Description:** The introduction to modeling and state space representation, the mechanical systems, several examples of state space models
 
+| **Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter] | **Notes:** [online][1_notes_online], google colab, [pdf][1_notes_pdf]	|
+|---	|---	|
 
-**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter] | **Notes:** online, google colab, [pdf][1_notes_pdf]
 <!-- **Supplementary material:** 
 python code, jupyter notebook and google colab on different aspects of simulation   -->
 
@@ -39,9 +40,9 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 **Description:** The basics of analysis and control of linear and nonlinear systems, stability, pole placement, linearization and lyapunov analysis
-[random value]
 
-**Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter] | **Notes:** [online][2_notes_online], google colab, [pdf][2_notes_pdf]
+| **Slides:** [online][2_slides_online], [jupyter notebook][2_slides_jupyter] | **Notes:** [online][2_notes_online], google colab, [pdf][2_notes_pdf]	|
+|---	|---	|
 
 **Supplementary material:** 
 1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
