@@ -12,13 +12,13 @@ The material of this course is based on technologies which in my humble opinion 
 #### **Core Topics:**
 
 
-[Introduction to Modeling](https://simeon-ned.github.io/mcp/chapters/01_state_space_modeling.html) (1 week):
+Introduction to Modeling (1 week):
   * The notion of dynamical system, classification, continues and discrete models.
   * Simulation of ODE
   * What is control system and how we build one. 
   * Practical issues in control design, implementation in multiprocessing fashion. 
 
-[Review of System Analysis and Control](https://simeon-ned.github.io/mcp/chapters/02_analysis_and_control.html) (1 week): 
+Review of System Analysis and Control (1 week): 
 * System analysis, Stability, Controlability. 
 * Pole placement, Optimal linear control, linear quadratic regulator (LQR)
 * Nonlinear control via Linearization. 
