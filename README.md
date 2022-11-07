@@ -9,8 +9,7 @@ This course is attempt to explore **modern control paradigms** in terms of **num
 
 The material of this course is based on technologies which in my humble opinion are theoretically interesting and practically significant. This in no way means that the reviewed algorithms will be the recipe for resolving all your control problems. However it may give you some view on the modern control field.
 
-#### **Core Topics:**
-
+<!-- #### **Core Topics:** -->
 
 **Introduction to Modeling**
   * The notion of dynamical system, classification, continues and discrete models.

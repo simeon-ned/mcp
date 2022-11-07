@@ -17,16 +17,16 @@ The material of this course is based on technologies which in my humble opinion 
 The course is consist of following parts:
 
 
-* **Introduction and Modeling** (1 week): recap the concept of dynamical system, and discuss some issues related to practical implementation of controllers.
+* **Introduction and Modeling**: recap the concept of dynamical system, and discuss some issues related to practical implementation of controllers.
 
-* **Review of System Analysis and Control** (1 week): review of system analysis, Lyapunov theory, stability, and linear and nonlinear control, with focus on numerical tools.
+* **Review of System Analysis and Control**: review of system analysis, Lyapunov theory, stability, and linear and nonlinear control, with focus on numerical tools.
 
-* **Optimization in Planning and Control** (2 weeks): overview the optimization driven methods dedicated for planning and control of linear and nonlinear systems, MPC and Lyapunov inspired methods.
+* **Optimization in Planning and Control**: overview the optimization driven methods dedicated for planning and control of linear and nonlinear systems, MPC and Lyapunov inspired methods.
 
 
-* **Identification and Data Driven Methods** (2 weeks): In this chapter we will study the algorithms that allow us to find the parameters of abstract models based on the measurements from real plant and even build model from the scratch.  
+* **Identification and Data Driven Methods**: In this chapter we will study the algorithms that allow us to find the parameters of abstract models based on the measurements from real plant and even build model from the scratch.  
 
-* **Other topics:** (1 week): Here we will briefly review the ideas and the other interesting techniques, including numerical analysis, including differential flatness, state observers and sum-of-squares programming etc.
+* **Other topics:**: Here we will briefly review the ideas and the other interesting techniques, including numerical analysis, including differential flatness, state observers and sum-of-squares programming etc.
 
 <!-- 
 * **Term project presentation** (final exam): In the end you will apply one of the studied concepts and prepare the short (10-20 min) presentation.
