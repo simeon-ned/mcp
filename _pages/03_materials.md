@@ -32,7 +32,7 @@ The course material is organized in the form of **interactive lectures** with mi
 <div class="table-wrapper" markdown="block">
 
 |:-:|:-:|
-|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** online, google colab, [pdf][1_notes_pdf]|
+|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** [online][1_notes_online], google colab, [pdf][1_notes_pdf]|
 
 </div>
 
@@ -44,10 +44,10 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 ### **Lecture 2**: Basics of Analysis and Control
-[2_slides_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html
-[2_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.ipynb
-[2_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.pdf
-[2_notes_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.html
+[2_slides_online]: https://simeon-ned.github.io/mcp/lectures/02_linear_analysis_and_fb/02_linear_analysis_and_fb.slides.html
+[2_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/02_linear_analysis_and_fb/02_linear_analysis_and_fb.ipynb
+[2_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/02_linear_analysis_and_fb/02_linear_analysis_and_fb.pdf
+[2_notes_online]: https://simeon-ned.github.io/mcp/lectures/02_linear_analysis_and_fb/02_linear_analysis_and_fb.html
 <!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
 
 
@@ -121,13 +121,13 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ### **Lecture 5**: Model Predictive Control
 [5_slides_online]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.slides.html
-[5_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/05_mpc.ipynb
+[5_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.ipynb
 [5_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.pdf
 [5_notes_online]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.html
 <!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
 
 
-**Description:** Finite hotizon LQR as leas squares. Incorporating constraints in to optimal linear control, receding horizon and online planning as optimization.
+**Description:** Finite horizon LQR as leas squares. Incorporating constraints in to optimal linear control, quadratic programming, receding horizon and online planning as controller.
 
 <div class="table-wrapper" markdown="block">
 
@@ -142,6 +142,31 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 ---- 
+
+### **Lecture 5**: Trajectory Optimization
+[6_slides_online]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.slides.html
+[6_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.ipynb
+[6_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.pdf
+[6_notes_online]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.html
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** Trajectory optimization over nonlinear systems, finite horizon optimal control, nonlinear optimization. Differential flatness. 
+
+<div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][6_slides_online], [jupyter notebook][6_slides_jupyter]|**Notes:** [online][6_notes_online], [pdf][6_notes_pdf]|
+
+</div>
+
+<!-- **Supplementary material:** 
+1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
+2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+
+
+---- 
+
 
 
 
