@@ -32,7 +32,7 @@ The course material is organized in the form of **interactive lectures** with mi
 <div class="table-wrapper" markdown="block">
 
 |:-:|:-:|
-|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** [online][1_notes_online], google colab, [pdf][1_notes_pdf]|
+|**Slides:** [online][1_slides_online], [jupyter notebook][1_slides_jupyter]|**Notes:** [online][1_notes_online], [pdf][1_notes_pdf]|
 
 </div>
 
@@ -143,7 +143,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-### **Lecture 5**: Trajectory Optimization
+### **Lecture 6**: Trajectory Optimization
 [6_slides_online]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.slides.html
 [6_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.ipynb
 [6_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/06_trajectory_optimization/06_trajectory_optimization.pdf
