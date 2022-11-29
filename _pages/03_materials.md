@@ -160,8 +160,8 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div>
 
 **Supplementary material:** 
-1. Swing-up for cart pole with trapezoidal collocation: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1xEtJr_6wXQrS5yWPV9JwyIQtkcJdMnJz) 
-2. Soft landing trajectory for 1-DoF simplified model of Apollo 11, adding time to decision variables [google colab](https://colab.research.google.com/drive/15yK1DjHp5oh92NAdGjhbmQCN0iZqkh9p)   -->
+1. [Swing-up for cart pole with trapezoidal collocation](https://colab.research.google.com/drive/1xEtJr_6wXQrS5yWPV9JwyIQtkcJdMnJz) 
+2. [Soft landing trajectory for 1-DoF simplified model of Apollo 11, adding time to decision variables](https://colab.research.google.com/drive/15yK1DjHp5oh92NAdGjhbmQCN0iZqkh9p)   -->
 
 
 ---- 
