@@ -68,12 +68,11 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-
 ### **Lecture 3**: Lyapunov Stability Theory
-[3_slides_online]: https://simeon-ned.github.io/mcp/lectures/03_laypunov/03_laypunov.slides.html
-[3_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/03_laypunov/03_laypunov.ipynb
-[3_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/03_laypunov/03_laypunov.pdf
-[3_notes_online]: https://simeon-ned.github.io/mcp/lectures/03_laypunov/03_laypunov.html
+[3_slides_online]: https://simeon-ned.github.io/mcp/lectures/03_lyapunov/03_lyapunov.slides.html
+[3_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/03_lyapunov/03_lyapunov.ipynb
+[3_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/03_lyapunov/03_lyapunov.pdf
+[3_notes_online]: https://simeon-ned.github.io/mcp/lectures/03_lyapunov/03_lyapunov.html
 <!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
 
 
@@ -83,6 +82,30 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 |:-:|:-:|
 |**Slides:** [online][3_slides_online], [jupyter notebook][3_slides_jupyter]|**Notes:** [online][3_notes_online], [pdf][3_notes_pdf]|
+
+</div>
+
+<!-- **Supplementary material:** 
+1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
+2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+
+
+---- 
+
+### **Lecture 3**: Lyapunov Stability Theory
+[4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
+[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
+[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
+[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** The notion of Optimal Control. Bellman optimality, Linear case: LQR controller, Riccatti equations, relation between value and Lyapunov functions 
+
+<div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][4_slides_online], [jupyter notebook][4_slides_jupyter]|**Notes:** [online][4_notes_online], [pdf][4_notes_pdf]|
 
 </div>
 
