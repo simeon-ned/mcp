@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Simeon Nedelchev^1, Valeria Skvortsova^1, Boris Guryev^1, Igor Gaponov^1, Jee-Hwan Ryu^2   " />
+  <title>On Energy-Preserving Motion in Twisted String Actuators</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    div.abstract {
+      margin: 2em 2em 2em 2em;
+      text-align: left;
+      font-size: 85%;
+    }
+    div.abstract-title {
+      font-weight: bold;
+      text-align: center;
+      padding: 0;
+      margin-bottom: 0.5em;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <script
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js"
+  type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">On Energy-Preserving Motion in Twisted String
+Actuators</h1>
+<p class="author">Simeon Nedelchev<span
+class="math inline">\(^1\)</span>, Valeria Skvortsova<span
+class="math inline">\(^1\)</span>, Boris Guryev<span
+class="math inline">\(^1\)</span>, Igor Gaponov<span
+class="math inline">\(^1\)</span>, Jee-Hwan Ryu<span
+class="math inline">\(^2\)</span> <a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a> <a href="#fn2"
+class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> <a
+href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a></p>
+<div class="abstract">
+<div class="abstract-title">Abstract</div>
+<p>Many applications require robotic end-effectors and mechanisms to
+move along periodic trajectories of given amplitude and frequency. If
+motion parameters are known in advance, it might be beneficial to design
+the mechanism in such a way that its natural frequency is close to that
+of the desired trajectory so that controller needs to provide minimal
+effort to generate sustained oscillations. In this paper, we investigate
+natural nonlinear oscillatory behavior in twisted string actuators
+(TSA), describing its mathematical model and providing experimental
+verification of this phenomenon based on observations of dynamics and
+energy. We also design an energy-preserving controller that is capable
+of generating undamped oscillations of desired magnitude even under
+severe constraints on actuator torque. Experimental study has
+demonstrated that it was possible to induce undamped oscillatory
+response of TSA with a 2-kg payload while applying a maximum of 6 mNm
+motor torque, which can be used in robotic applications that require
+periodic motions and high controller efficiency, like legged robots.</p>
+</div>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#introduction" id="toc-introduction">Introduction</a></li>
+<li><a href="#modeling" id="toc-modeling">Mathematical Modeling of
+TSA</a>
+<ul>
+<li><a href="#kinematics" id="toc-kinematics">Kinematics</a></li>
+<li><a href="#energy" id="toc-energy">Energy</a></li>
+<li><a href="#dynamics" id="toc-dynamics">Dynamics</a></li>
+<li><a href="#the-singular-point" id="toc-the-singular-point">The
+Singular Point</a></li>
+</ul></li>
+<li><a href="#orbits" id="toc-orbits">Energy, Phase Trajectories, and
+Periodic Orbits in TSA</a>
+<ul>
+<li><a href="#experimental-setup"
+id="toc-experimental-setup">Experimental Setup</a></li>
+<li><a href="#energy-and-phase-trajectories"
+id="toc-energy-and-phase-trajectories">Energy and Phase
+Trajectories</a></li>
+<li><a href="#friction-compensation"
+id="toc-friction-compensation">Friction Compensation</a></li>
+</ul></li>
+<li><a href="#control" id="toc-control">Energy Preserving Control over
+TSA</a>
+<ul>
+<li><a href="#fundamentals-of-energy-preserving-control"
+id="toc-fundamentals-of-energy-preserving-control">Fundamentals of
+Energy-Preserving Control</a></li>
+<li><a href="#experiment-with-a-linear-tsa"
+id="toc-experiment-with-a-linear-tsa">Experiment with a Linear
+TSA</a></li>
+</ul></li>
+<li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
+</ul>
+</nav>
+<h1 id="introduction">Introduction</h1>
+<p>Various applications of mechanical engineering and robotics involve
+periodic motion of the end-effectors, links and payloads. These include
+legged robots, lower-limb exoskeletons, mechanisms providing cyclic
+motion, and many others. One of the key aspects in control over such
+systems is their energy efficiency. This calls for the use of
+lightweight actuators with high power density and efficient control
+schemes for them.</p>
+<p>Twisted string actuators (TSAs) are rotary-to-translational
+cable-driven actuators, in which torsional twisting of a bundle of
+strings or cables results in their contraction. Key advantages of TSAs
+include light weight, high efficiency and power density, and compliance.
+These actuators are used in various applications including multi-legged
+robots <span class="citation" data-cites="suzuki2005toward">(Suzuki and
+Ichikawa 2005)</span>, lower-limb exoskeletons <span class="citation"
+data-cites="kornbluh2018twisted">(Kornbluh et al. 2018, US Patent
+9,950,422)</span> and mobile robots <span class="citation"
+data-cites="sabelhaus2015system">(Sabelhaus et al. 2015)</span>, all of
+which involve periodic motion of the payload. However, the dynamical
+properties of TSAs have not been fully explored in these studies, with
+the authors mainly employing the actuators for low-speed control.
+However, these applications involved comparatively low payload forces
+<span class="citation" data-cites="nedelchev2020accurate">(Nedelchev,
+Gaponov, and Ryu 2020)</span>. When operating with significant payload
+during high-frequency motion, a more efficient control approach might be
+required.</p>
+<p>Conventionally, TSAs are controlled in a uni-directional fashion when
+the motor twists the strings from their initial state all the way until
+desired contraction level is reached, and then back. Thus, if a fast
+periodical motion of the payload is required, the motor needs to be
+stopped and reversed 4 times during each period, around both zero and
+fully twisted positions, which may cause power losses since the energy
+generated by motor driver should be sufficient to overcome the kinetic
+energy of spinning rotor inertia when stopping. However, one of the
+unique features of the TSAs is their symmetrical behaviour: the strings
+contract identically whether they are twisted clockwise or
+counterclockwise. With this in mind, one can design a control system in
+such a way that the motor twists the strings in both directions, which
+will eliminate the need to reverse the motor in its zero configuration.
+An additional benefit is that motor’s shaft itself, despite its
+comparatively low inertia, can propel the payload by twisting the
+strings on its own without drawing any power from the supply. As a
+consequence, a TSA-driven system with proposed controller can reach
+higher string contraction values with constraints on motor torque.</p>
+<p>We have observed during the experiments that when the loaded twisted
+strings were released freely from their contracted state, they twisted
+in the opposite direction on their own after being completely untwisted,
+carried on by the motor inertia. As the result, the strings contracted
+again, sometimes working against significant forces that acted on the
+payload, with no effort required from the actuator. This held true even
+for comparatively small values of rotor inertia. Thus, knowing some
+intrinsic properties of a TSA-powered setup such as its natural
+frequency, one can leverage the tendency of TSA to oscillate freely in
+order to design an efficient controller which will be able to induce
+periodical motion of the payload with minimal motor power required. This
+controller can maintain the mechanical energy of the system at a
+desired, constant level by compensating for the power losses within the
+system, effectively turning the setup into a frictionless nonlinear
+pendulum. In this work, we have implemented an energy-preserving control
+law on a practical linear TSA setup, and designed it so that it
+supported undamped oscillatory response of a 2-kg payload with desired
+magnitude and natural frequency while requiring a maximum of 6 mNm
+torque from the actuator.</p>
+<p>To the best of our knowledge, this paper marks the first occasion
+when free oscillations in TSA systems were studied, modeled, and
+experimentally investigated. In addition, this work presents novel
+experimental results on the application of energy-preserving control to
+TSA-based robotic systems. Such systems and controllers can be used in
+the limbs of bipedal and quadruped robots to ensure energy-efficient
+locomotion, even in the presence of severe actuator limitations.</p>
+<h1 id="modeling">Mathematical Modeling of TSA</h1>
+<p>Before proceeding to the analysis of natural oscillations in twisted
+string actuators, we would like to start with a brief overview of the
+mathematical modeling of TSA. For a deeper insight and peculiarities of
+TSA modeling, the reader may refer to previously published works <span
+class="citation" data-cites="nedelchev2020accurate">(Nedelchev, Gaponov,
+and Ryu 2020)</span>, <span class="citation"
+data-cites="popov2012study">(Popov, Gaponov, and Ryu 2012)</span>, <span
+class="citation" data-cites="palli2012modeling">(Palli et al.
+2012)</span>.</p>
+<h2 id="kinematics">Kinematics</h2>
+<p>According to the conventional representation of a section of twisted
+string shown in Fig. <a href="#fig:schematic_diagram"
+data-reference-type="ref"
+data-reference="fig:schematic_diagram">1</a>(a), a cable of length <span
+class="math inline">\(L\)</span> and radius <span
+class="math inline">\(r\)</span>, twisted at an angle <span
+class="math inline">\(\theta\)</span>, forms a helix and contracts by
+the <span class="math inline">\(X\)</span> amount. For the resulting
+right triangle with the sides <span class="math inline">\((L-X),\theta
+r\)</span>, and <span class="math inline">\(L\)</span> one can derive
+the geometric constraint of twisted string as: <span
+class="math display">\[\label{eq.mod:geom_const}
+\theta^2 r^2 + (L-X)^2 - L^2 = 0\]</span></p>
+<p>It is important to note here that equation above is a second order
+polynomial, and there exist two solutions for motor angle <span
+class="math inline">\(\theta\)</span> that correspond to <em>the same
+contraction level</em> <span class="math inline">\(X\)</span>.</p>
+<p>Differentiating the constraint above yields the relationships between
+the payload (output) and motor (input) velocities: <span
+class="math display">\[\label{eq.mod:x_dot}
+\dot{X} = \mathcal{J}(\theta, X)\dot{\theta}\]</span> where <span
+class="math inline">\(J\)</span> denotes the Jacobian of twisted strings
+and <span class="math inline">\(\dot{\theta}\)</span> stands for angular
+speed. Hereinafter, we will omit the arguments <span
+class="math inline">\((\theta, X)\)</span> for the sake of brevity.</p>
+<p>It is worth noting that the twisted strings Jacobian may be
+represented in various ways, depending on the availability of motor or
+payload variables: <span class="math display">\[\label{eq.mod:jacobian}
+    \mathcal{J} = \frac{\theta r^2}{L-X} = \frac{\theta r^2}{\sqrt{L^2 -
+\theta^2 r^2}} = \frac{r \sqrt{L^2 - (L -X)^2}}{L-X}\]</span></p>
+<h2 id="energy">Energy</h2>
+<p>Total energy of TSA can be represented just like that of any
+conventional mechanical system as a sum of kinetic, potential and
+dissipated energy terms <span class="math inline">\(E = E_K + E_P +
+E_D\)</span> as follows: <span
+class="math display">\[\label{eq.mod:total_energy}
+    E = \frac{1}{2} I\dot{\theta}^2 + \frac{1}{2}m \dot{X}^2 + mgX +
+E_D\]</span> where the first term represents kinetic energy of the
+spinning motor shaft with inertia <span
+class="math inline">\(I\)</span>, the next two terms correspond to
+kinetic energy of the payload of mass <span
+class="math inline">\(m\)</span> moving at speed <span
+class="math inline">\(\dot{X}\)</span> and its potential energy due to
+gravity (here we assume the payload always moves along the vertical
+axis), with <span class="math inline">\(g\)</span> denoting the
+gravitational constant, while the term <span
+class="math inline">\(E_D\)</span> represents all the energy losses due
+to friction inside the motor, payload’s sliders and the strings
+themselves, as well as reflecting all other internal and external
+disruptive forces, otherwise unaccounted for explicitly.</p>
+<figure>
+<img src="pics/tsa_scheme.PNG" id="fig:schematic_diagram"
+alt="Schematic diagrams for the analysis of TSA kinematics (a) and dynamics (b)" />
+<figcaption aria-hidden="true">Schematic diagrams for the analysis of
+TSA kinematics (a) and dynamics (b)</figcaption>
+</figure>
+<p>Depending on the variables of choice, one may represent the kinetic
+and potential energy with the motor-side or payload-side variables using
+the kinematical constraints <a href="#eq.mod:x_dot"
+data-reference-type="eqref"
+data-reference="eq.mod:x_dot">[eq.mod:x_dot]</a> and <a
+href="#eq.mod:jacobian" data-reference-type="eqref"
+data-reference="eq.mod:jacobian">[eq.mod:jacobian]</a> as follows: <span
+class="math display">\[\label{eq.mod:K_Pi_energies}
+\begin{matrix}
+    E_K = \frac{1}{2} (I + m \mathcal{J}^2)\dot{\theta}^2 = \frac{1}{2}
+(I\mathcal{J}^{-2} + m )\dot{X}^2 \\
+    \\
+    E_P = mgX = mg (L - \sqrt{L^2 - \theta^2r^2} )  \\
+\end{matrix}\]</span> where terms preceding the squares of velocities
+<span class="math inline">\(\dot{\theta}^2, \dot{X}^2\)</span> represent
+the reflected inertia values on the motor and payload sides,
+respectively.</p>
+<h2 id="dynamics">Dynamics</h2>
+<p>A schematic diagram of a twisted string actuator with a connected
+payload is shown in Fig. <a href="#fig:schematic_diagram"
+data-reference-type="ref" data-reference="fig:schematic_diagram">1</a>
+(b). After driving the energy equations, one may use Lagrange-Euler
+approach to derive the equations of motion (EoM) of twisted string
+actuators as follows: <span
+class="math display">\[\label{eq.mod:dyn_model}
+\left\{\begin{matrix}
+u = I \ddot{\theta} + \mathcal{J}T  + b_\theta \dot{\theta} + \tau_{d}
+\\[0.5em]
+T = m \ddot{X} + mg  + b_X \dot{X} + F_{d}
+\end{matrix}\right.\]</span> where <span
+class="math inline">\(u\)</span> denotes motor torque, <span
+class="math inline">\(T\)</span> stands for string’s tension, the terms
+<span class="math inline">\(b_\theta,  b_X\)</span> represent viscous
+friction coefficients in motor and payload, respectively, while the
+terms <span class="math inline">\(\tau_{d}, F_{d}\)</span> represent the
+collective effects of all other forces at play inside the TSA system
+such as dry friction, string jamming and external disturbance applied to
+the payload. For more information and details on derivation of these
+forces and particularly ones responsible for losses due to intrinsic
+string compliance one may refer to our previous work <span
+class="citation" data-cites="nedelchev2020accurate">(Nedelchev, Gaponov,
+and Ryu 2020)</span>.</p>
+<p>Assuming that the constraint <a href="#eq.mod:geom_const"
+data-reference-type="eqref"
+data-reference="eq.mod:geom_const">[eq.mod:geom_const]</a> always holds,
+one may rewrite the EoM above with respect to motor acceleration as
+follows: <span class="math display">\[\label{eq.mod:dyn_motor}
+u = D_\theta (\mathbf{q}) \ddot{\theta} +
+h_\theta(\mathbf{q},\dot{\mathbf{q}})\]</span> where <span
+class="math display">\[\begin{matrix}
+D_\theta = I + m \mathcal{J}^2\\
+h_\theta = \big(b_\theta +
+\mathcal{J}(m\dot{\mathcal{J}}+b_X)\big)\dot{\theta} + \mathcal{J}(mg  +
+F_{d}) + \tau_d
+\end{matrix}\]</span> and <span
+class="math inline">\(\mathbf{q}\)</span> is the chosen set of
+generalized coordinates, which may be either one of the motor- and
+payload-side variables (<span class="math inline">\(\theta\)</span> and
+<span class="math inline">\(X\)</span>, respectively) or both of them,
+depending on the model used to calculate the Jacobian with <a
+href="#eq.mod:jacobian" data-reference-type="eqref"
+data-reference="eq.mod:jacobian">[eq.mod:jacobian]</a>.</p>
+<p>Just like in the case when driving the energy equations, one may use
+the TSA kinematic model to rewrite the dynamics in terms of the payload
+acceleration: <span class="math display">\[\label{eq.mod:dyn_load}
+u = D_X(\mathbf{q}) \ddot{X} + h_X(\mathbf{q},\dot{\mathbf{q}})\]</span>
+with the dynamical terms <span class="math inline">\(D_X,h_X\)</span>
+defined as follows: <span class="math display">\[\begin{matrix}
+D_X = I\mathcal{J}^{-2} + m\\
+h_X = \big(\mathcal{J}^{-1} b_\theta + \mathcal{J}^{-2}
+\dot{\mathcal{J}}I + b_X  \big)\dot{X} + \mathcal{J}(mg  + F_{d}) +
+\tau_d
+\end{matrix}\]</span></p>
+<p>Having driven all the necessary dynamical and energy equations, we
+now move onto the analysis of energy exchange within a TSA system, and
+in particular, of that in its behavior in the singular
+configuration.</p>
+<h2 id="the-singular-point">The Singular Point</h2>
+<p>It should be noted that if one is willing to use the kinetic energy
+model derived in terms of the payload variables, a problem with Jacobian
+singularity may arise (when <span class="math inline">\(\theta =
+0\)</span>, <span class="math inline">\(\mathcal{J} = 0\)</span> as
+suggested by <a href="#eq.mod:jacobian" data-reference-type="eqref"
+data-reference="eq.mod:jacobian">[eq.mod:jacobian]</a>), which is also
+the case for the dynamical model <a href="#eq.mod:dyn_load"
+data-reference-type="eqref"
+data-reference="eq.mod:dyn_load">[eq.mod:dyn_load]</a>. Thus, it may
+naturally seem that this singular configuration (<span
+class="math inline">\(\theta = 0\)</span>) should be avoided at all
+costs in the applications involving TSA control, unless this is
+practically impossible.</p>
+<p>From the physical standpoint, the singular configuration corresponds
+to the fully untwisted state of the strings, which makes is impossible
+to generate the payload motion (contraction speed <span
+class="math inline">\(\dot{X}\)</span> is zero regardless of motor
+specifications). As an immediate consequence, this implies that all
+mechanical energy of the system in the singularity point can be only
+stored (and dissipated by) in the motor shaft, since all other sources
+of energy are zero (no torsional energy accumulated since the strings
+are untwisted, zero payload-side potential energy since <span
+class="math inline">\(X=0\)</span> and kinetic energy). In addition, any
+external force applied to the payload will not affect the motor torque
+<span class="math inline">\(u\)</span> since the Jacobian is zero. All
+of these imply that, if there is some kinetic energy within the system
+in its singular configuration stored due to the motor’s inertia, a part
+of it will be dissipated while the remainder will be converted into
+other types of energy, e.g. into the kinetic and potential energy of the
+payload. Thus, the peaks of various energy components contributed by the
+motor and the payload will be occurring at different time instances.</p>
+<p>One can see simulated energy curves as a function of time in Fig. <a
+href="#fig:energies_simulation" data-reference-type="ref"
+data-reference="fig:energies_simulation">2</a>, which were generated
+after the strings were twisted and then released with zero control
+effort from the motor side. The string parameters were chosen to be
+<span class="math inline">\(L\)</span> = 170 mm, <span
+class="math inline">\(R\)</span> = 0.75 mm. We have introduced non-zero
+energy dissipation on the motor side to make the simulation more
+realistic, and one can note in the figure that the total energy levels
+decrease with time.</p>
+<figure>
+<img src="pics/plots/energy_damp.png" id="fig:energies_simulation"
+alt="Simulated time plot of energy components: kinetic energy of the motor (E_K^\theta), payload (E_K^X) and potential energy of the latter (E_P^X)" />
+<figcaption aria-hidden="true">Simulated time plot of energy components:
+kinetic energy of the motor (<span
+class="math inline">\(E_K^\theta\)</span>), payload (<span
+class="math inline">\(E_K^X\)</span>) and potential energy of the latter
+(<span class="math inline">\(E_P^X\)</span>)</figcaption>
+</figure>
+<p>It follows from the simulation results that, unless energy
+dissipation is excessively large, one should be able to observe
+periodical motion of the system in the phase plane of actuator
+coordinates <span class="math inline">\(\{\theta,
+\dot{\theta}\}\)</span> and payload coordinates <span
+class="math inline">\(\{X,\dot{X}\}\)</span>. Moreover, the phase
+trajectory in the motor space should theoretically lie in all four
+quadrants of the phase plane, while the payload’s phase trajectory must
+be fully contained on the right hand side of the phase plane (since
+solution of <a href="#eq.mod:geom_const" data-reference-type="eqref"
+data-reference="eq.mod:geom_const">[eq.mod:geom_const]</a> with respect
+to <span class="math inline">\(X\)</span> is always positive) and pass
+through the origin <span class="math inline">\(X = 0 , \dot{X} =
+0\)</span>. Simulated phase plots are shown in Fig. <a
+href="#fig:phase_plots_simulation" data-reference-type="ref"
+data-reference="fig:phase_plots_simulation">3</a>.</p>
+<figure>
+<img src="pics/plots/phase_space_model.png"
+id="fig:phase_plots_simulation"
+alt="Phase plots of damped oscillations in a TSA system in the motor (left) and payload (right) coordinates. Vector fields indicate the direction of motion in various points of the phase plot" />
+<figcaption aria-hidden="true">Phase plots of damped oscillations in a
+TSA system in the motor (left) and payload (right) coordinates. Vector
+fields indicate the direction of motion in various points of the phase
+plot</figcaption>
+</figure>
+<p>As the next step, we have decided to repeat the simulations whose
+results are presented in Fig. <a href="#fig:energies_simulation"
+data-reference-type="ref" data-reference="fig:energies_simulation">2</a>
+and <a href="#fig:phase_plots_simulation" data-reference-type="ref"
+data-reference="fig:phase_plots_simulation">3</a> on a practical setup,
+and the experimental evaluation is described in the next section.</p>
+<h1 id="orbits">Energy, Phase Trajectories, and Periodic Orbits in
+TSA</h1>
+<h2 id="experimental-setup">Experimental Setup</h2>
+<p>In order to investigate oscillations in twisted string actuators, we
+have manufactured the testbed shown in Fig. <a href="#fig:ex_setup"
+data-reference-type="ref" data-reference="fig:ex_setup">4</a>. It is
+comprised of a EC motor (Maxon EC-4pole 22 120W, 18V) equipped with a
+quadrature optical incremental encoder (1024 CPT), a linear encoder with
+the resolution of 18 <span class="math inline">\(\mu\)</span>m (Avago
+H9740-1 360 LPI) to measure the actual string contraction and a digital
+controller (32 bit Arm Cortex-M7 216 MHz core-based) connected to the
+motor driver (ESCON 70/10). We have installed a pair of 0.75-mm Dyneema
+strings in the TSA with the length of 170 mm, just like the ones used in
+simulation.</p>
+<figure>
+<img src="pics/linear_setup.png" id="fig:ex_setup"
+alt="Photo of the experimental setup: 1) linear encoder, 2) static payload, 3) EC motor with angular incremental encoder, 4) twisted strings " />
+<figcaption aria-hidden="true">Photo of the experimental setup: 1)
+linear encoder, 2) static payload, 3) EC motor with angular incremental
+encoder, 4) twisted strings </figcaption>
+</figure>
+<p>The setup operates as follows. The motor twists the strings, causing
+their contraction. The strings pull up the bottom mount which moves
+along three vertical sliders (fixed between the base and the motor
+mount) and has a optical strip attached to it. Rigidly fixed to the
+moving mount are three more thin metal rods that support the top
+platform with a payload. The motion of the optical strip is registered
+by a stationary optical encoder located at the motor mount.</p>
+<h2 id="energy-and-phase-trajectories">Energy and Phase
+Trajectories</h2>
+<p>After we confirmed the presence of oscillations in a practical setup
+similar to those suggested by the simulations, our first aim was to try
+recreate the oscillatory energy behavior presented in Fig. <a
+href="#fig:energies_simulation" data-reference-type="ref"
+data-reference="fig:energies_simulation">2</a>. The corresponding
+experimental plot of major energy components in TSA is given in Fig. <a
+href="#fig:energies_exp" data-reference-type="ref"
+data-reference="fig:energies_exp">5</a>. One can note the similarities
+between the simulated and experimental energy curves, with the main
+difference being a slightly lopsided shape of the actuator kinetic
+energy <span class="math inline">\(E_K^\theta\)</span>. This is most
+likely caused by some effects at play in a practical setup which are not
+reflected by the simplified energy model, namely, dry friction and
+unilateral string stiffness (jamming) described in our previous work
+<span class="citation" data-cites="nedelchev2020accurate">(Nedelchev,
+Gaponov, and Ryu 2020)</span>. However, the general nature of the
+oscillations, as well as their frequency, was predicted by the simulated
+results fairly well.</p>
+<figure>
+<img src="pics/plots/exp_energy_damp.png" id="fig:energies_exp"
+alt="Experimental time plots of energy components in a TSA during free oscillations with 90% of friction compensated for by controller" />
+<figcaption aria-hidden="true">Experimental time plots of energy
+components in a TSA during free oscillations with 90% of friction
+compensated for by controller</figcaption>
+</figure>
+<p>Corresponding phase plots in actuator and payload coordinates are
+presented in Fig. <a href="#fig:phase_plots_exp"
+data-reference-type="ref" data-reference="fig:phase_plots_exp">6</a>.
+Here, the shape difference between simulated and experimental phase
+trajectories are more apparent, which calls for a deeper analysis if one
+desires to predict the curves with higher accuracy. However, in this
+preliminary research we were mainly interested in whether we would be
+able to predict the peak values of positions and velocities (and the
+corresponding energy levels) with enough accuracy, and the simplified
+energy model allows to achieve this.</p>
+<figure>
+<img src="pics/plots/phase_space_experiment.png"
+id="fig:phase_plots_exp"
+alt="Experimental phase plots of free oscillations, with the vector fields plotted with help of the proposed model" />
+<figcaption aria-hidden="true">Experimental phase plots of free
+oscillations, with the vector fields plotted with help of the proposed
+model</figcaption>
+</figure>
+<h2 id="friction-compensation">Friction Compensation</h2>
+<p>Once one has a satisfactory model of free oscillatory response in a
+twisted string actuator that is confirmed by experiments, one research
+question that can be asked is how can we use this knowledge to design an
+energy-efficient controller for TSAs. Since the main causes of power
+dissipation in the system are the frictional forces, their cancellation
+(or at least compensation for) would naturally prolong free oscillatory
+response in the actuator. Thus, we have designed a feedforward control
+system which would introduce the torque <span class="math inline">\(u =
+\hat{b}\dot{\theta}\)</span>, with a positive term <span
+class="math inline">\(\hat{b}\)</span> representing our guess of viscous
+friction coefficient.</p>
+<p>A time plot of three curves, corresponding to damped oscillatory
+response of TSA for 3 different values of <span
+class="math inline">\(\hat{b}\)</span> are shown in Fig. <a
+href="#fig:friction_cancellation" data-reference-type="ref"
+data-reference="fig:friction_cancellation">7</a>. One can note how
+increased friction compensation leads to prolonged oscillations, as
+expected. Thus, if one can fully compensate for friction (e.g. with
+feedforward/feedback linearization) in a TSA system, it is possible to
+induce undamped oscillatory response in it with the ‘natural’ frequency.
+Just like in any undamped system, total energy will remain constant
+during free oscillations, with kinetic energy of the actuator converted
+into kinetic and potential energy of the payload, and vice versa. The
+reverse is also true - if one preserves constant energy levels within a
+TSA-based system by means of control, they can induce undamped
+oscillations with minimal control effort, which can be leveraged, for
+example, when designing a legged robot.</p>
+<p>Energy preservation in TSA is studied in detail in the following
+section.</p>
+<figure>
+<img src="pics/plots/exp_var_damp.png" id="fig:friction_cancellation"
+alt="Time plots of motor angle (top) and payload (bottom) for various levels of friction compensation" />
+<figcaption aria-hidden="true">Time plots of motor angle (top) and
+payload (bottom) for various levels of friction
+compensation</figcaption>
+</figure>
+<h1 id="control">Energy Preserving Control over TSA</h1>
+<p>As discussed above, one can induce periodic undamped oscillations
+within TSAs by conserving mechanical energy of the system. This can be
+achieved by a proper selection of control algorithm, and this approach
+is commonly known in literature as energy preserving control (EPC). The
+following provides a brief introduction into the EPC and discusses
+design and implementation of this control strategy to twisted string
+actuators.</p>
+<p>The concept of energy-preserving control has been originally proposed
+by Wiklund et al. who demonstrated an approach to solve the swing-up
+problem of inverted pendulum with this control strategy <span
+class="citation" data-cites="wiklund1993new">(Wiklund, Kristenson, and
+Aström 1993)</span>. The EPC technique was later applied to other
+underactuated systems (Furuta pendulum, acrobot, three-link gymnast
+robot, cart-pole) in the works of Iwashiro and Spong, with the studies
+outlining regulation methods to reach desired energy levels even in the
+presence of actuator constraints <span class="citation"
+data-cites="iwashiro1996energy spong1996energy">(Iwashiro, Furuta, and
+Astrom 1996; Spong 1996)</span>. Fantoni et al. have later demonstrated
+how, using the passivity properties of the internal energy of a pendubot
+system, one can bring the state either arbitrarily close to the top
+position or to some homoclinic orbit <span class="citation"
+data-cites="fantoni2000energy">(Fantoni, Lozano, and Spong 2000)</span>.
+In addition, the EPC was successfully applied in robot control tasks.
+For instance, Asano et al. have used this technique to control a bipedal
+walking robot and discovered that the application of energy constraints
+has significantly simplified generation of movement patterns <span
+class="citation" data-cites="asano2004novel">(Asano et al.
+2004)</span>.</p>
+<h2 id="fundamentals-of-energy-preserving-control">Fundamentals of
+Energy-Preserving Control</h2>
+<p>One of the most powerful features of the energy preserving control
+method is that it becomes much simpler to design a regulator for a
+particular dynamical system. One starts the EPC design process by
+driving a single energy equation of the system <span
+class="math inline">\(E(q)\)</span>, where <span
+class="math inline">\(q\)</span> is a scalar position. In order to reach
+some desired position <span class="math inline">\(q_d\)</span>, one
+therefore needs to reach constant desired energy level <span
+class="math inline">\(E_d = E(q_d)\)</span>. Then, defining the energy
+error with <span class="math display">\[\tilde{E} = E_d - E(q)\]</span>
+and choosing control law as <span
+class="math display">\[\label{eq.con:epc}
+    u = k\tilde{E}\dot{q}\]</span> results in energy error converging to
+zero, which will eventually drive system energy to desired level <span
+class="math inline">\(E_d\)</span>. This may be shown by analyzing the
+Lyapunov candidate <span class="math display">\[\label{eq:v_dot}
+    V = \frac{1}{2}\tilde{E}^2\]</span> whose derivative can be found as
+follows: <span class="math display">\[\label{eq:v_dot}
+    \dot{V} = \tilde{E}\dot{\tilde{E}} = \tilde{E} ( \dot{E}_d - \dot{q}
+u) = -\tilde{E} \dot{q}^T u= -k\tilde{E}^2\dot{q}^2\]</span> which is
+strictly negative along all system trajectories, provided that <span
+class="math inline">\(\dot{q}\neq0\)</span>. For more details on
+stability analysis of this control scheme the reader is kindly referred
+to the works <span class="citation"
+data-cites="iwashiro1996energy spong1996energy">(Iwashiro, Furuta, and
+Astrom 1996; Spong 1996)</span>.</p>
+<p>Now, let us move onto implementation of energy preserving control in
+the linear TSA joint studied in the previous section.</p>
+<h2 id="experiment-with-a-linear-tsa">Experiment with a Linear TSA</h2>
+<p>We have conducted an experiment whose main goal was to induce TSAs
+load oscillation with amplitude of <span class="math inline">\(X_d =
+20\)</span> mm starting from a fully untwisted configuration. the mass
+was setted to be <span class="math inline">\(\hat{m} = 2\)</span> kg
+which corresponds to the energy level of <span class="math inline">\(E =
+0.39\)</span> J. In addition, maximal motor torque was set to be 6
+mNm.</p>
+<p>In order to regulate to the desired energy level we have implemented
+control law <a href="#eq.con:epc" data-reference-type="eqref"
+data-reference="eq.con:epc">[eq.con:epc]</a>, with actual energy
+provided by equation <a href="#eq.mod:total_energy"
+data-reference-type="eqref"
+data-reference="eq.mod:total_energy">[eq.mod:total_energy]</a> except
+for the dissipative term <span class="math inline">\(E_D\)</span>: <span
+class="math display">\[\label{eq.con:total_energy}
+    E = \frac{1}{2} \hat{I}\dot{\theta}^2 + \frac{1}{2}\hat{m} \dot{X}^2
++ \hat{m}gX\]</span> where <span class="math inline">\(\hat{I},
+\hat{m}\)</span> denote our estimates of the motor inertia and payload
+mass, respectively. The value of motor inertia was identified to be
+<span class="math inline">\(\hat{I}=9.7\)</span> gcm<span
+class="math inline">\(^2\)</span>. Load position <span
+class="math inline">\(X\)</span> was measured directly while <span
+class="math inline">\(\dot{\theta},\dot{X}\)</span> was estimated with
+backward difference with data sampling frequency of 3 kHz. No other
+computations or measurements were necessary for energy calculations.</p>
+<p>Time plots of resulting payload motion and motor torque are presented
+in Figure <a href="#fig:time_plots_X_torque_epc"
+data-reference-type="ref"
+data-reference="fig:time_plots_X_torque_epc">8</a>. One can note that it
+takes the controller about 2.5 periods in as many seconds to reach
+desired contraction levels, while the motor torque remains bounded.
+Motor controller had a hardware cutoff at 6 mNm torque, which is shown
+by a horizontal dashed line in Fig. <a
+href="#fig:time_plots_X_torque_epc" data-reference-type="ref"
+data-reference="fig:time_plots_X_torque_epc">8</a> (bottom), while the
+intermittent peaks exceeding these values are the result of noise in
+electrical current measurements that were used to compute motor torque.
+For the sake of comparison, if one simply commands the motor to twist
+the strings and drive the payload to the desired contraction level with
+the same torque constraint of 6 mNm, the load gets after travelling
+approximately 3 mm, as shown by the curve labeled ‘PD control’ in Fig.
+<a href="#fig:time_plots_X_torque_epc" data-reference-type="ref"
+data-reference="fig:time_plots_X_torque_epc">8</a> (top).</p>
+<figure>
+<img src="pics/plots/control_comparison.png"
+id="fig:time_plots_X_torque_epc"
+alt="Experimental time plots of payload position (top) and motor torque (bottom) in a TSA with energy-preserving control and torque constraints" />
+<figcaption aria-hidden="true">Experimental time plots of payload
+position (top) and motor torque (bottom) in a TSA with energy-preserving
+control and torque constraints</figcaption>
+</figure>
+<p>Once the desired energy level has been reached, the controller
+conserves it throughout the experiment, as shown in Fig. <a
+href="#fig:energy_levels_EPC" data-reference-type="ref"
+data-reference="fig:energy_levels_EPC">9</a>. The corresponding phase
+plots in the actuator and payload space are shown in Fig. <a
+href="#fig:phase_plot_EPC" data-reference-type="ref"
+data-reference="fig:phase_plot_EPC">10</a>. One can note with the help
+of overlaid vector fields (computed with the proposed mathematical
+model) that oscillations starting from the origin diverge toward the
+final limit cycle, while those that start outside converge to it, which
+suggests stable controller behavior. The same observation holds for both
+motor and payload responses.</p>
+<figure>
+<img src="pics/plots/energy_convergence.png" id="fig:energy_levels_EPC"
+alt="Desired and actual energy levels in TSA under energy preserving control" />
+<figcaption aria-hidden="true">Desired and actual energy levels in TSA
+under energy preserving control</figcaption>
+</figure>
+<figure>
+<img src="pics/plots/phase_space_control.png" id="fig:phase_plot_EPC"
+alt="Phase portraits of TSA in actuator (left) and payload (right) space with energy preserving control. Vector fields are generated with proposed mathematical model" />
+<figcaption aria-hidden="true">Phase portraits of TSA in actuator (left)
+and payload (right) space with energy preserving control. Vector fields
+are generated with proposed mathematical model</figcaption>
+</figure>
+<p>These experiments confirm that energy preserving control can indeed
+be successfully implemented in twisted string actuators to generate
+undamped oscillatory response with nearly-constant energy levels, as was
+suggested by our initial hypothesis. Design of controllers of this type
+is fairly simple and straightforward, and therefore these results seem
+very encouraging.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>In this paper, we investigated free oscillatory response of linear
+twisted string actuators. We have outlined a mathematical model based on
+energy observations and TSA dynamics that could predict the oscillations
+with satisfactory accuracy and described energy conversion within
+TSA.</p>
+<p>One important consequence of understanding the nature of oscillatory
+responses in twisted string actuators is the ability to design TSA-based
+robotic systems that could efficiently leverage the advantages of this
+oscillatory process for the purposes of control. As one example, with
+appropriate controller selection one can deliberately induce undamped
+oscillatory response in TSA by preserving mechanical energy within a
+system at a desired level. We have implemented one such technique
+(energy-preserving control) and validated it in a series of hardware
+experiments. The tests have demonstrated that it was possible to
+generate undamped oscillatory response in a TSA with a payload of 2 kg
+while exerting a maximum of 6 mNm torque. This suggests that energy
+preserving control can be used in combination with TSA to ensure
+power-efficient locomotion, and this control strategy can also be used
+in applications that pose high requirements to power efficiency and
+require periodic movements of a certain magnitude.</p>
+<p>In the simplest TSA module like the one studied in this paper, we can
+only control the magnitude of the oscillations and not their frequency.
+However, if one introduces an element with variable stiffness, it should
+become possible to control both frequency and magnitude, thus supporting
+a more diverse range of periodic motions. This can be beneficial for
+applications like legged robots that may require different gaits
+depending on a situation, or for robots whose dynamical parameters can
+vary significantly during periodic movements.</p>
+<p>In the nearest future, we are planning to investigate oscillations
+and extend energy preserving control to rotational TSA-based systems. In
+addition, we are planning to design a 2-DOF robotic legged that employs
+TSAs, induce oscillatory response and investigate the effects of contact
+with environment (hybrid dynamics) on system behavior. When developing
+TSA-based robotic limbs, one can design their movement trajectories in
+such a way that they are as close to oscillations as possible. Once
+designed, the controller will stabilize the resulting orbits.</p>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-asano2004novel" class="csl-entry" role="doc-biblioentry">
+Asano, Fumihiko, Masaki Yamakita, Norihiro Kamamichi, and Zhi-Wei Luo.
+2004. <span>“A Novel Gait Generation for Biped Walking Robots Based on
+Mechanical Energy Constraint.”</span> <em>IEEE Transactions on Robotics
+and Automation</em> 20 (3): 565–73.
+</div>
+<div id="ref-fantoni2000energy" class="csl-entry"
+role="doc-biblioentry">
+Fantoni, Isabelle, Rogelio Lozano, and Mark W Spong. 2000. <span>“Energy
+Based Control of the Pendubot.”</span> <em>IEEE Transactions on
+Automatic Control</em> 45 (4): 725–29.
+</div>
+<div id="ref-iwashiro1996energy" class="csl-entry"
+role="doc-biblioentry">
+Iwashiro, Masafumi, Katsuhisa Furuta, and Karl J Astrom. 1996.
+<span>“Energy Based Control of Pendulum.”</span> In <em>Proceeding of
+the 1996 IEEE International Conference on Control Applications IEEE
+International Conference on Control Applications Held Together with IEEE
+International Symposium on Intelligent Contro</em>, 715–20. IEEE.
+</div>
+<div id="ref-kornbluh2018twisted" class="csl-entry"
+role="doc-biblioentry">
+Kornbluh, Roy David, Alexander Steele Kernbaum, Thomas Low, Katherine
+Goss Witherspoon, Brian Keith Mccoy, Adam Arnold Edward Ziemba, Paul
+Michael Birkmeyer, and Richard M Mahoney. 2018, US Patent 9,950,422.
+<span>“Twisted String Actuators for an Exosuit System.”</span> Google
+Patents.
+</div>
+<div id="ref-nedelchev2020accurate" class="csl-entry"
+role="doc-biblioentry">
+Nedelchev, Simeon, Igor Gaponov, and Jee-Hwan Ryu. 2020. <span>“Accurate
+Dynamic Modeling of Twisted String Actuators Accounting for String
+Compliance and Friction.”</span> <em>IEEE Robotics and Automation
+Letters</em> 5 (2): 3438–43.
+</div>
+<div id="ref-palli2012modeling" class="csl-entry"
+role="doc-biblioentry">
+Palli, Gianluca, Ciro Natale, Chris May, Claudio Melchiorri, and Thomas
+Wurtz. 2012. <span>“Modeling and Control of the Twisted String Actuation
+System.”</span> <em>IEEE/ASME Transactions on Mechatronics</em> 18 (2):
+664–73.
+</div>
+<div id="ref-popov2012study" class="csl-entry" role="doc-biblioentry">
+Popov, Dmitry, Igor Gaponov, and Jee-Hwan Ryu. 2012. <span>“A Study on
+Twisted String Actuation Systems: Mathematical Model and Its
+Experimental Evaluation.”</span> In <em>2012 IEEE/RSJ International
+Conference on Intelligent Robots and Systems</em>, 1245–50. IEEE.
+</div>
+<div id="ref-sabelhaus2015system" class="csl-entry"
+role="doc-biblioentry">
+Sabelhaus, Andrew P, Jonathan Bruce, Ken Caluwaerts, Pavlo Manovi, Roya
+Fallah Firoozi, Sarah Dobi, Alice M Agogino, and Vytas SunSpiral. 2015.
+<span>“System Design and Locomotion of SUPERball, an Untethered
+Tensegrity Robot.”</span> In <em>2015 IEEE International Conference on
+Robotics and Automation (ICRA)</em>, 2867–73. IEEE.
+</div>
+<div id="ref-spong1996energy" class="csl-entry" role="doc-biblioentry">
+Spong, Mark W. 1996. <span>“Energy Based Control of a Class of
+Underactuated Mechanical Systems.”</span> <em>IFAC Proceedings
+Volumes</em> 29 (1): 2828–32.
+</div>
+<div id="ref-suzuki2005toward" class="csl-entry" role="doc-biblioentry">
+Suzuki, Masakazu, and Azumi Ichikawa. 2005. <span>“Toward Springy Robot
+Walk Using Strand-Muscle Actuators.”</span> In <em>Climbing and Walking
+Robots</em>, 479–86. Springer.
+</div>
+<div id="ref-wiklund1993new" class="csl-entry" role="doc-biblioentry">
+Wiklund, Magnus, Anders Kristenson, and Karl Johan Aström. 1993.
+<span>“A New Strategy for Swinging up an Inverted Pendulum.”</span>
+<em>IFAC Proceedings Volumes</em> 26 (2): 757–60.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>*The reported study was funded by RFBR and National
+Research Foundation of Korea according to the research project No.
+19-58-51014.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><span class="math inline">\(^1\)</span>Institute of
+Robotics and Computer Vision, Innopolis University, Innopolis, Russia.
+<span><code>{s.nedelchev, v.skvortsova}@innopolis.university, {b.guryev, i.gaponov}@innopolis.ru</code></span>.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p><span class="math inline">\(^2\)</span>Department of
+Civil and Environmental Engineering, KAIST, Daejeon, South Korea.
+<code>jhryu@kaist.ac.kr.</code><a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+</html>
