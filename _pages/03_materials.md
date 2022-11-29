@@ -45,9 +45,9 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ### **Lecture 2**: Basics of Analysis and Control
 [2_slides_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html
-[2_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.ipynb
-[2_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.pdf
-[2_notes_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.html
+[2_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.ipynb
+[2_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.pdf
+[2_notes_online]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_fb/02_analysis_and_fb.html
 <!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
 
 
@@ -92,7 +92,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-### **Lecture 3**: Lyapunov Stability Theory
+### **Lecture 4**: Optimal Control, LQR
 [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
 [4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
@@ -115,6 +115,34 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 ---- 
+
+
+---- 
+
+### **Lecture 5**: Model Predictive Control
+[5_slides_online]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.slides.html
+[5_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/05_mpc.ipynb
+[5_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.pdf
+[5_notes_online]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.html
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** Finite hotizon LQR as leas squares. Incorporating constraints in to optimal linear control, receding horizon and online planning as optimization.
+
+<div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][5_slides_online], [jupyter notebook][5_slides_jupyter]|**Notes:** [online][5_notes_online], [pdf][5_notes_pdf]|
+
+</div>
+
+<!-- **Supplementary material:** 
+1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
+2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+
+
+---- 
+
 
 
 
