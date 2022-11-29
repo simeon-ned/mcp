@@ -62,7 +62,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div>
 
 **Supplementary material:** 
-1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
+1. [Linearization based control of cart pole system](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
 <!-- 2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
 
 
@@ -109,9 +109,9 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 </div>
 
-<!-- **Supplementary material:** 
-1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
-2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+**Supplementary material:** 
+1. [Linearization based LQR control of cart pole system](https://colab.research.google.com/drive/1A5T-BBmXUtNmghc8Io1fr90KLEQw9PUO) 
+2. [Example of LQR design for satellite maneuver](https://colab.research.google.com/drive/1HtwXMTESG5IDhD2Zo40m-ME3aJJxX9K-#scrollTo=Il8RG8NGQdtw)  
 
 
 ---- 
@@ -136,9 +136,8 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 </div>
 
-<!-- **Supplementary material:** 
-1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
-2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+**Supplementary material:**  
+1. [CVXPY based linear MPC over linearized cart pole](https://colab.research.google.com/drive/1lxto-BktBLRuiLL_6SphZf4uZGAI-X-H) 
 
 
 ---- 
@@ -160,9 +159,9 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 </div>
 
-<!-- **Supplementary material:** 
-1. Linearization based control of cart pole system: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld) 
-2. Sampling based region of attraction: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1F4FbgGSjZ-rxDbnQbZft2G6R_-MC18Ld)   -->
+**Supplementary material:** 
+1. Swing-up for cart pole with trapezoidal collocation: python code, jupyter notebook and [google colab](https://colab.research.google.com/drive/1xEtJr_6wXQrS5yWPV9JwyIQtkcJdMnJz) 
+2. Soft landing trajectory for 1-DoF simplified model of Apollo 11, adding time to decision variables [google colab](https://colab.research.google.com/drive/15yK1DjHp5oh92NAdGjhbmQCN0iZqkh9p)   -->
 
 
 ---- 
