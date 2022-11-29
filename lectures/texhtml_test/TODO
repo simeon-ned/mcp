@@ -1,1 +1,0 @@
-pandoc main.tex -f latex -t html --bibliography=ref.bib --citeproc -s -H=header.html --mathjax --toc -o myHtmlFile.html 
