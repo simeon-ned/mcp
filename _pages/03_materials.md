@@ -208,7 +208,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div> -->
 
 > The content of this lecture is in progress
-{: .block-warning }
+{: .block-danger }
 
 ---- 
 
@@ -235,7 +235,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div> -->
 
 > The content of this lecture is in progress
-{: .block-warning }
+{: .block-danger }
 
 ---- 
 
@@ -258,7 +258,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div> -->
 
 > The content of this lecture is in progress
-{: .block-warning }
+{: .block-danger }
 
 ---- 
 
@@ -281,7 +281,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 </div> -->
 
 > The content of this lecture is in progress
-{: .block-warning }
+{: .block-danger }
 
 
 ---- 
