@@ -18,6 +18,11 @@ The course material is organized in the form of **interactive lectures** with mi
 
 
 <!-- ### Lectures -->
+
+---- 
+
+## **Part 1**: Introduction to Modeling, System Analysis and Control  
+ 
 ---- 
 
 ### **Lecture 1**: Modeling and State Space 
@@ -201,7 +206,8 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-## **Part 3**: System Identification, Model Reduction and Data Driven Control 
+## **Part 3**: System Identification, Model Reduction and Data Driven Control
+
 ---- 
 
 ### **Lecture 8**: Basics of System Identification and Parameter Estimation
