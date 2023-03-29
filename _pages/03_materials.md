@@ -97,6 +97,12 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
+---- 
+
+## **Part 2**: Optimization in Control
+ 
+---- 
+
 ### **Lecture 4**: Optimal Control, LQR
 [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
@@ -122,7 +128,6 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 ---- 
 
 
----- 
 
 ### **Lecture 5**: Model Predictive Control
 [5_slides_online]: https://simeon-ned.github.io/mcp/lectures/05_mpc/05_mpc.slides.html
@@ -183,6 +188,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 **Description:** The notion of Optimal Control. Bellman optimality, Linear case: LQR controller, Riccatti equations, relation between value and Lyapunov functions 
 
 
+---- 
 ### **Lecture 7**: Lyapunov Based Control 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
@@ -231,6 +237,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 > The content of this lecture is in progress
 {: .block-warning }
 
+---- 
 
 ### **Lecture 9**: System Identification Methods 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
@@ -253,6 +260,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 > The content of this lecture is in progress
 {: .block-warning }
 
+---- 
 
 ### **Lecture 10**: Data Driven Linearization 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
@@ -276,18 +284,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 {: .block-warning }
 
 
-
-<!-- #### Lecture 3: Fundamentals of Lyapunov Analysis 
-
-**Description:** The introduction to modeling and state space representation
-**Slides:** online, online code-less, google colab, jupyter notebook
-**Notes:** online html, markdown, pdf
-**Supplementary material:** python code, jupyter notebook and google colab on linearization based control of cart pole system -->
-
- 
-
-<!-- Eventually we will also the course with a variety of practical exercises and tutorials.  -->
-
+---- 
 
 <!-- > ##### NOTE -->
 >
