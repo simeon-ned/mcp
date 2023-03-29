@@ -1,8 +1,53 @@
-script to convert all lectures from ipynb to the dedicated formats 
 
-CONVEX OPTIMIZATION 
-LMI 
-SUM OF SQUARES
+CODE:
+☐ script to convert all lectures from ipynb to the dedicated formats 
 
-CHECK FOLLOWING
-https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/
+SOME USEFULL MATERIAL:
+☐ https://people.eecs.berkeley.edu/~pabbeel/cs287-fa19/
+☐ https://people.inf.ethz.ch/cellier/Lect/NMC/Lect_nmc_index.html
+☐ https://www.youtube.com/watch?v=Mb8cuse9yfo
+☐ https://www.youtube.com/watch?v=GBBXZXmb8UE
+
+LECTURES:
+    ☐ RESTRUCTURE MATERIAL
+    
+BASICS OF LINEAR CONTROL AND FEEDBACK:
+    ☐ Controlability matrix and Grammians https://www.youtube.com/watch?v=ZNHx62HbKNA
+    ☐ Implicit systems, generilized EIGS https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.eig.html
+
+OPTIMAL CONTROL:
+    ☐ LMI Based control 
+    ☐ State dependent riccati equations
+
+MPC: 
+    ☐ Explicit MPC 
+    ☐ Robust MPC 
+    ☐ System Level Synthesis
+
+LYAPUNOV:
+    ☐ Picture of level sets of Lyapunov functions and connection to definition
+    ☐ Region of attraction, Invariant sets and Funnels + pictures 
+    ☐ Barballats lemma
+    ☐ Sampling based alrotighms
+    ☐ Sum of squares
+    ☐ Lyapunov Inspired Control
+    ☐ Connection to optimal control, bellman and HJB
+
+TRAJECTORY OPTIMIZATION:
+    ☐ Planning through contact, complimentary constraints
+    ☐ More examples on diff flatness: Flexible Joint, Car, Plannar drone
+
+OTHER:
+    ☐ Observer design and connection to LQR -> LQE
+    ☐ State and Elipsoid propogation 
+    ☐ Implicit systems, generilized Eigen values, Lyapunov and Ricatti equations
+    ☐ Learning in the control design + verification with Lyapunov and sampling algorithms
+
+APENDIX:
+    ☐ Basics of linear algebra
+    ☐ Mechanics 
+    ☐ Convex optimization 
+        ☐ Linear programming: sparse regression
+        ☐ Quadratic programming: MPC 
+        ☐ Second order cone: 
+        ☐ Semi Definite Programming: Common Lyapunov Function, Control Design 

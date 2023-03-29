@@ -154,13 +154,13 @@ $$
 
 Then we need a tools to compute this integral, in collocation framework we distinguish this methods by two classes, in first we will increase the number of steps $N$ in order to build the accurate solution of integral above via imposing more constraints on the state and control trajectory which are represented as low order polynomials (usually up to $3$-rd order) we call such **h-methods**. Another possibility is to treat the whole trajectory as one or several **higher order polynomial** that should satisfy the dynamics in several points (collocation points), these are **p-methods**    
 
-Here we will discuss one of the simplest techniques that control as piece-wise linear functions while all integrals are represented using following trapezoidal rule:
+Here we will discuss one of the simplest techniques by treating control as piece-wise linear functions while all integrals are represented using following trapezoidal rule:
 $$
     \int^{t_f}_{t_0}\mathbf{g}(\tau,\mathbf{x}(\tau),\mathbf{u}(\tau))d\tau \approx \sum^{N-1}_{k=0}\frac{1}{2}h_k(\mathbf{g}_k+\mathbf{g}_{k+1})
 $$
 
 
-Now we can revrite the OCP as follows:
+Now we can rewrite the OCP as follows:
 
 $$
 \begin{align*}

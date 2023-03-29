@@ -167,6 +167,61 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 ---- 
 
 
+### **Lecture 7**: Lyapunov Based Control 
+<!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
+[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
+[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
+[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html -->
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** The notion of Optimal Control. Bellman optimality, Linear case: LQR controller, Riccatti equations, relation between value and Lyapunov functions 
+
+
+### **Lecture 7**: Lyapunov Based Control 
+<!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
+[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
+[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
+[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html -->
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** The notion of Control Lyapunov Functions, Sontag Formula, Control as QP, Safety, Barrier Method and CBF
+
+
+<!-- <div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][6_slides_online], [jupyter notebook][6_slides_jupyter]|**Notes:** [online][6_notes_online], [pdf][6_notes_pdf]|
+
+</div> -->
+
+> The content of this lecture is in progress
+{: .block-warning }
+
+
+## **PART 3**: System Identification and Data Driven Control 
+
+### **Lecture 8**: System Identification 
+<!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
+[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
+[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
+[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html -->
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** The notion of System Identification, Sontag Formula, Control as QP, Safety, Barrier Method and CBF
+
+
+<!-- <div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][6_slides_online], [jupyter notebook][6_slides_jupyter]|**Notes:** [online][6_notes_online], [pdf][6_notes_pdf]|
+
+</div> -->
+
+> The content of this lecture is in progress
+{: .block-warning }
 
 
 
