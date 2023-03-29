@@ -175,20 +175,6 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 ---- 
-
-
-### **Lecture 7**: Lyapunov Based Control 
-<!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
-[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
-[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
-[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html -->
-<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
-
-
-**Description:** The notion of Optimal Control. Bellman optimality, Linear case: LQR controller, Riccatti equations, relation between value and Lyapunov functions 
-
-
----- 
 ### **Lecture 7**: Lyapunov Based Control 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
