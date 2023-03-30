@@ -175,7 +175,29 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 
 ---- 
-### **Lecture 7**: Lyapunov Based Control 
+### **Lecture 7**: Linear Matrix Inequality in Control
+<!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
+[4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
+[4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
+[4_notes_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.html -->
+<!-- [2_notes_colab]: https://simeon-ned.github.io/mcp/lectures/02_analysis_and_feedback/02_analysis_and_feedback.slides.html -->
+
+
+**Description:** Semi-definite programming, Lyapunov based control via linear matrix inequalities
+
+
+<!-- <div class="table-wrapper" markdown="block">
+
+|:-:|:-:|
+|**Slides:** [online][6_slides_online], [jupyter notebook][6_slides_jupyter]|**Notes:** [online][6_notes_online], [pdf][6_notes_pdf]|
+
+</div> -->
+
+> The content of this lecture is in progress
+{: .block-danger }
+
+---- 
+### **Lecture 8**: Control Lyapunov and Barrier Functions
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
 [4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
@@ -197,7 +219,6 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 {: .block-danger }
 
 ---- 
-
 ## **Part 3**: System Identification, Model Reduction and Data Driven Control
 
 ---- 
