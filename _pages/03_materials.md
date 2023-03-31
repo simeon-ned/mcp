@@ -223,7 +223,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-### **Lecture 8**: Basics of System Identification and Parameter Estimation
+### **Lecture 9**: Basics of System Identification and Parameter Estimation
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
 [4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
@@ -246,7 +246,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-### **Lecture 9**: System Identification Methods 
+### **Lecture 10**: System Identification Methods 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
 [4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
@@ -269,7 +269,7 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 ---- 
 
-### **Lecture 10**: Data Driven Linearization 
+### **Lecture 11**: Data Driven Linearization 
 <!-- [4_slides_online]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.slides.html
 [4_slides_jupyter]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.ipynb
 [4_notes_pdf]: https://simeon-ned.github.io/mcp/lectures/04_lqr/04_lqr.pdf
