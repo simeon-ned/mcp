@@ -12,7 +12,7 @@ This course is presented as a series of **interactive lectures** that combine ba
 
 > ##### Format of Slides and Notes
 >
->For majority of the slides there are also notes, both online and pdf formats (note that pdf is automatically generated, so some bugs are possible). Furthermore, for your convenience we have uploaded the jupyter notebooks to [google colab](https://colab.research.google.com/) so you can try the interactive part of the class without any additional installations directly in your browser. 
+>The majority of the slides also have accompanying notes that can be viewed online or downloaded as a pdf (though it should be noted that the pdf is automatically generated and may contain some errors). In addition, we have made the jupyter notebooks available on [google colab](https://colab.research.google.com/), so you can try out the interactive components of the course right in your browser without the need for any additional installations.
 {: .block-tip }
 
 
@@ -294,5 +294,5 @@ python code, jupyter notebook and google colab on different aspects of simulatio
 
 <!-- > ##### NOTE -->
 >
-> The content of the lectures is constantly adapted and supplemented, and furthermore some additional material will appear on this site over time, which was not presented in class (mainly due to time constraints).
+> The lecture material is continually revised and updated, and over time, additional information will be made available on this site that was not covered in class (primarily due to time constraints).
 {: .block-warning }
