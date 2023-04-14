@@ -7,7 +7,7 @@ layout: post
 permalink: /info/about.html
 ---
 
-This course will introduce students to modern **control paradigms through** the use of **theoretical foundations** and an emphasis on **numerical methods** and **optimization**. Proofs and in-depth theoretical reasoning, on the other hand, will be avoided whenever possible (due to time constraints and the amount of material).      
+This course will introduce you to modern **control paradigms through** the use of **theoretical foundations** and an emphasis on **numerical methods** and **optimization**. Proofs and in-depth theoretical reasoning, on the other hand, will be avoided whenever possible (due to time constraints and the amount of material).      
 
 
 The concepts covered in this class are based on technologies that, in my opinion, are not only fascinating from a theoretical standpoint but also have important applications in the real world. That said, the reviewed algorithms are by no means a magic bullet for fixing all of your control issues. However, it might shed light on the state of the art in the modern control theory.
