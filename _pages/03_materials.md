@@ -7,8 +7,7 @@ layout: post
 permalink: /info/materials.html
 ---
 
-The course material is organized in the form of **interactive lectures** with mixture of theory and simple Python code snippets. To access the slides, just open the link in your browser, we are working on providing a code-less html version as well.  In case you want to use the lectures in interactive mode (with the possibility to run the code), it is necessary to download the jupyter-notebook version of the slides and install the [Python's rise](https://rise.readthedocs.io/en/stable/). 
-
+This course is presented as a series of **interactive lectures** that combine basic Python code examples with theoretical discussion. Simply open the link in your browser to view the slides; we are also working on making the slides available in a code-free HTML format. If you want to follow along with the lectures interactively (with the ability to run the code), you'll need to install [Python's rise](https://rise.readthedocs.io/en/stable/) and download the jupyter-notebook version of the slides.
 
 
 > ##### Format of Slides and Notes
