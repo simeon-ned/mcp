@@ -1,0 +1,394 @@
+---
+title: "The Titile of Fancy Presentation"
+
+# lang: ru # this will translate to russian 
+# language: _language.yml # this is custom language 
+
+callout-icon: false
+subtitle: The cool looking html slides
+author:
+  - name: Simeon Nedelchev
+    id: SN
+    orcid: 0000-0003-1588-8260
+    email: s.nedelchev@innopolis.university
+    affiliation: 
+      - name: Innopolis University 
+        city: Innopolis
+        state: Tatarstan
+        url: [https://innopolis.university/en/]
+copyright: 
+  holder: Simeon Nedelchev
+date: 'today' #03/07/2023
+date-format: medium
+format: 
+    revealjs:
+        theme: [default, styles/inno_style.scss]
+        slide-number: true
+        # theme: default
+        chalkboard: 
+            theme: whiteboard
+            width: 3
+        # footer: <https://simeon-ned.com/mcp/>
+        hide-inactive-cursor: true
+        default-image-extension: svg
+        # fontsize: 16
+        cap-location: bottom
+        logo: images/logos/inno.png
+        # css: styles.css
+        # cite-method: biblatex
+        # csl: style.csl
+highlight-style: gruvbox
+
+# revealjs-plugins:
+#   - spotlight
+# crossref:
+#   fig-title: Fig.     # (default is "Figure")
+#   # tbl-title: Tbl     # (default is "Table")
+#   title-delim: —     # (default is ":")
+funding: "The author received no specific funding for this work."
+bibliography: biblio/references.bib
+csl: styles/ieee.csl
+code-block-border-left: true
+
+---
+
+
+## Control Elements  
+
+::: {layout="[1, 20]"}
+![](images/icons/menu.png){width="41"}
+
+Toggle the slide menu with the menu button (top left) to go to other slides and access presentation tools.
+:::
+::: {layout="[1, 20]"}
+![](images/icons/chalkboard.png){width="41"}
+
+Use the chalkboard button (bottom left) of the slide to toggle the chalkboard.
+:::
+::: {layout="[1, 20]"}
+![](images/icons/canvas.png){width="41"}
+
+Use the notes canvas button at the (bottom left) to toggle drawing on top of the current slide.
+:::
+
+## Hotkeys
+
+There are some features and hot keys:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+
+|                   |                                    |
+| ----------------- | ---------------------------------- |
+| → , ↓ ,  ← , ↑    | Navigation                          |
+| Alt + ←/↑/→/↓     | Navigate without fragments         |
+| Shift + ←/↑/→/↓   | Jump to first/last slide           |
+| CTRL + Shift + F  | Search                             |
+| ESC, O            | Slide overview                     |
+
+:::
+
+::: {.column width="50%"}
+
+|                   |                                    |
+| ----------------- | ---------------------------------- |
+| F                 | Fullscreen                         |
+| S                 | Speaker notes view                 |
+| B, C              | Toggle chalkboard/notes canvas     |
+| DEL, BACKSPACE    | Clear/reset drawings on slide      |
+| M                 | Toggle menu                        |
+:::
+
+::::
+
+The full list of hotkeys is accesable via key "`?`"
+
+# Text, Layout, Fragments
+
+## Text Formatting
+The text is formatted via markdown or html, **bold**, *italic*, <u>underline</u>, superscript^2^, subscript~2~, ~~strikethrough~~, `verbatim code`, <https://google.org>, [link to google](https://google.com)
+
+### Lower Header 
+
+
+Here is a footnote reference[^1] 
+
+[^1]: Here is the footnote.
+
+
+::: footer
+You may create the footer like this
+:::
+
+
+## Lists, Layout, Tabsets
+
+The layout can be changed, for instance as 2 columns:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+Unordered list:
+
+* unordered list 1
+    + sub-item 1
+* unordered list 2
+
+:::
+
+::: {.column width="50%"}
+Ordered list:
+
+1. unordered list 1
+    i) sub-item 1
+3. item 2
+:::
+
+::::
+
+
+::: {.panel-tabset}
+
+### First Tab
+Some content is in the first tab
+
+### Second Tab
+while some in the second...
+
+### Third Tab
+Hello there
+
+:::
+
+## Fragments and Pause
+
+Incremental text display and animation with fragments:
+
+
+::: {layout-ncol=2}
+::: {.fragment .strike}
+Strike
+:::
+
+::: {.fragment .highlight-green}
+Color highlight
+:::
+
+::: {.fragment .fade-in}
+Fade in
+:::
+
+::: {.fragment .fade-up}
+Slide up while fading in
+:::
+
+::: {.fragment .fade-left}
+Slide left while fading in
+:::
+
+
+::: {.fragment .fade-in-then-semi-out}
+Fade in then semi out
+:::
+
+:::
+
+. . . 
+
+one can also "pause" the slide....
+
+. . . 
+
+and continue with something
+
+
+<!-- ## Callouts
+
+
+::: {.callout-tip}
+This is a callout with a title.
+:::
+
+::: {.callout-note title="Callout with custom title"}
+This is a callout with a title.
+:::
+
+::: {.callout-note appearance="simple"}
+This is "simple" callout
+:::
+
+::: {.callout-warning title="Simple appearance with custom title" appearance="simple"}
+This is a "simple" callout with a title.
+::: -->
+
+
+# Code, Tables, Figures, Videos
+
+## Code 
+
+The code blocks are orginized as in Markdown:
+
+``` python
+import numpy as np
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+```
+
+The lines can be highlighted via argument `code-line-numbers`:
+
+```{.python code-line-numbers="|6|9|7,9|4-10||"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+## Tables{.smaller}
+
+Tables can be orginized via markdown, while providing control over column-widths and text location
+
+:::: {.columns}
+::: {.column width="15%"}
+:::
+::: {.column width="30%"}
+
+| fruit  | price  |
+|--------|--------|
+| apple  | 2.05   |
+| pear   | 1.37   |
+| orange | 3.09   |
+
+: {tbl-colwidths="[75,25]"}
+
+:::
+
+::: {.column width="50%"}
+
++---------+--------+------------------+
+| Right   | Left   | Centered         |
++========:+:=======+:================:+
+| Bananas | $1.34  | built-in wrapper |
++---------+--------+------------------+
+| Oranges | $2.13  | some text        |
++---------+--------+------------------+
+
+:::
+
+::::
+
+Tables can be cross referenced as  @tbl-first 
+
+| Col1 | Col2 | Col3 | Col4 | Col5 | Col6 |
+|------|------|------|------|------|------|
+| A    | B    | C    | D    | E    | F    |
+| E    | F    | G    | H    | I    | J    |
+| A    | G    | G    | K    | L    | M    |
+
+: First Table {#tbl-first}
+
+
+
+## Figures 
+
+![Innopolis University](images/figures/inno_university.jpg){#fig-inno}
+
+One may refer to figure @fig-inno 
+
+
+
+## Subfigures
+<!-- ![Inside Yandex Car](images/figures/yandex_car.gif){fig-alt="A drawing of an elephant." fig-align="center" height=300} -->
+
+::: {layout="[[1, 1]]"}
+
+![Outside Gym](images/figures/inno_gym.jpg){#fig-inno_gym}
+
+![Inside Gym](images/figures/inno_pool.jpg){#fig-inno_pool}
+
+:::
+
+
+
+## Videos
+
+{{< video https://www.youtube.com/watch?v=ZnWfmkMXbyY width="100%" height="85%" >}}
+
+# Equations, Theorems, Citations, Bibliography 
+
+## LaTeX Equations
+
+[MathJax](https://www.mathjax.org/) rendering of equations to HTML.
+Inline equations are included within a line of text $E=mc^2$. 
+
+Displayed equations set apart from the text:
+$$
+\int_{-\infty}^\infty e^{-x^2}dx = \sqrt{\pi}
+$$
+
+Equations can be auotumathecally numbered:
+
+
+$$
+\mathbf {O} ={\underset {\Omega }{\operatorname {argmin} }}\|\mathbf {A} {\boldsymbol {\Omega }}-\mathbf {B} \|_{F}\quad {\text{subject to}}\quad {\boldsymbol {\Omega }}^{\textsf {T}}{\boldsymbol {\Omega }}=\mathbf {I}
+$${#eq-nearest_orth}
+
+and referenced as (@eq-nearest_orth)
+
+
+## Theorems, Lemmas, Exercises
+
+::: {#thm-calculus}
+
+## Fundamental theorem of calculus
+
+Let $f$ be a continuous real-valued function defined on a closed interval $[a, b]$. Let $F$ be the function defined, for all $x$ in $[a, b]$, by $F(x)=\int _{a}^{x}f(t)\,dt.$
+Then $F$ is uniformly continuous on $[a, b]$ and differentiable on the open interval $(a, b)$, and $F'(x)=f(x)$ for all $x$ in $(a, b)$ so $F$ is an antiderivative of $f$
+:::
+
+Theorems are cross-referable as @thm-calculus. 
+
+There are a number of theorem variations supported, each with their own label prefix: lemmas are `#lem`, proposition are `#prp` etc, [read more](https://quarto.org/docs/authoring/cross-references.html#theorems-and-proofs)
+
+
+
+## Citations 
+
+
+The `bib` references and `csl` is fully supported, one may cite the articles, books etc.
+
+According to Newton's Philosophiæ Naturalis Principia Mathematica @newton1687principia.
+
+
+Dantzig's work on linear programming @dantzig1947maximization.
+
+Feynman's space-time approach to non-relativistic quantum mechanics @feynman1948space.
+
+Celebrated Turing's work on computable numbers @turing1937computable.
+
+
+## Bibliography
+
+::: {#refs}
+:::
+
+
+
+## And More...
+
+-   [Touch](https://quarto.org/docs/presentations/revealjs/advanced.html#touch-navigation) - presentations look great on mobile, swipe to navigate slides.
+-   [Multiplex](https://quarto.org/docs/presentations/revealjs/presenting.html#multiplex) - allows your audience to follow the slides of the presentation you are controlling on their own phone, tablet or laptop.
+-  [Themes](https://quarto.org/docs/presentations/revealjs/themes.html) - 10 Built-in or [create your own](https://quarto.org/docs/presentations/revealjs/themes.html#creating-themes)
+-   [Auto-Slide](https://quarto.org/docs/presentations/revealjs/presenting.html#auto-slide) - step through slides automatically, without any user input
+-   [Widgets](https://quarto.org/docs/interactive/widgets/jupyter.html) - include Jupyter widgets and htmlwidgets in your presentations
+-   [Embedding Jupyter Notebooks](https://quarto.org/docs/authoring/notebook-embed.html) - include the output of an external Jupyter notebook in a Quarto document.
+  
+Follow <https://quarto.org/> for more!
