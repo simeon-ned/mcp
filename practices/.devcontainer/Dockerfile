@@ -6,6 +6,10 @@ RUN micromamba install --yes --file /tmp/env.yaml && \
 
 ARG MAMBA_DOCKERFILE_ACTIVATE=1  # (otherwise python will not be found)
 
+USER root
+RUN apt-get update -y && apt-get install ffmpeg -y
+USER $MAMBA_USER
+
 # create needed files
 RUN cd $CONDA_PREFIX && \
     mkdir -p ./etc/conda/activate.d && \

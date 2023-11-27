@@ -6,6 +6,7 @@ dependencies:
   - pip
   - ipykernel
   - libgfortran5
+  - mesalib
   - pip:
       - cmeel_casadi_kin_dyn
       - darli
