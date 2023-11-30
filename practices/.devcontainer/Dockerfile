@@ -19,11 +19,10 @@ RUN cd $CONDA_PREFIX && \
 
 RUN echo "export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH:$(python3 -m cmeel lib)" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
-# COPY matplotlibrc /tmp/matplotlibrc
-# RUN mamba activate base
-# # Find the path to the Matplotlib folder
-# RUN python -c "import matplotlib; print(matplotlib.matplotlib_fname())" > /tmp/matplotlib_path.txt
 # Copy the matplotlibrc file to the Matplotlib folder
-# RUN cat /tmp/matplotlib_path.txt | xargs -I {} cp matplotlibrc {}
+RUN python -c "import matplotlib; print(matplotlib.get_configdir())" > /tmp/matplotlib_conf_path.txt
+RUN DESTINATION_PATH=$(cat /tmp/matplotlib_conf_path.txt)
+COPY matplotlibrc $DESTINATION_PATH/matplotlibrc
+COPY style.mplstyle $DESTINATION_PATH/style.mplstyle
 
 ENTRYPOINT ["/usr/local/bin/_entrypoint.sh"]
