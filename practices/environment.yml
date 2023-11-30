@@ -10,7 +10,6 @@ dependencies:
   - mesalib
   - scipy
   - pip:
-      - cmeel_casadi_kin_dyn
       - darli
       - mujoco
       - mediapy

@@ -1,9 +1,9 @@
 {
-    "build": {
-        "dockerfile": "Dockerfile",
-        "context": ".."
-    },
-    // "image": "robotlev/mcp:latest",
+    // "build": {
+    //     "dockerfile": "Dockerfile",
+    //     "context": ".."
+    // },
+    "image": "robotlev/mcp:latest",
     "customizations": {
         "vscode": {
             "extensions": [
