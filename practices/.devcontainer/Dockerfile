@@ -22,6 +22,6 @@ RUN cd $CONDA_PREFIX && \
 RUN echo "export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH:$(python3 -m cmeel lib)" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
 # change default matplotlib style
-COPY style.mplstyle /home/mambauser/.config/matplotlib/matplotlibrc
+COPY config/style.mplstyle /home/mambauser/.config/matplotlib/matplotlibrc
 
 ENTRYPOINT ["/usr/local/bin/_entrypoint.sh"]

@@ -13,3 +13,5 @@ dependencies:
       - darli
       - mujoco
       - mediapy
+      - cvxpy 
+      - cvxpygen
