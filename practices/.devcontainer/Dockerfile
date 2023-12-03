@@ -3,7 +3,8 @@ FROM mambaorg/micromamba:1.5.3
 USER root
 # ffmpeg - to run mujoco renderer
 # texlive-latex-extra texlive-fonts-recommended cm-super - to have a pretty matplotlib
-RUN apt-get update -y && apt-get install ffmpeg texlive-latex-extra texlive-fonts-recommended cm-super dvipng -y
+RUN apt-get update -y && apt-get install git ffmpeg texlive-latex-extra texlive-fonts-recommended cm-super dvipng -y
+
 USER $MAMBA_USER
 
 COPY --chown=$MAMBA_USER:$MAMBA_USER environment.yml /tmp/env.yaml
@@ -22,6 +23,6 @@ RUN cd $CONDA_PREFIX && \
 RUN echo "export LD_LIBRARY_PATH=$CONDA_PREFIX/lib:$LD_LIBRARY_PATH:$(python3 -m cmeel lib)" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 
 # change default matplotlib style
-COPY config/style.mplstyle /home/mambauser/.config/matplotlib/matplotlibrc
+COPY .config/style.mplstyle /home/mambauser/.config/matplotlib/matplotlibrc
 
 ENTRYPOINT ["/usr/local/bin/_entrypoint.sh"]
