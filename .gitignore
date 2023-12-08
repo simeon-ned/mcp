@@ -13,3 +13,4 @@ practices/03*
 to_sort/
 .jekyll-cache/
 *TODO
+.vscode/
