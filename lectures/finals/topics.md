@@ -57,7 +57,7 @@ Students who opt for Technical Talks are required to prepare an in-depth present
 
 - **Order Reduction in Linear Systems**: This involves simplifying complex linear systems to more manageable sizes while retaining their key characteristics, which is essential for control design and analysis. For a tutorial on this, watch [this video on Model Order Reduction](https://www.youtube.com/watch?v=FsLmBDfwQCY&list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR&index=3).
 
-- **System Identification**: The process of building mathematical models based on measured data to design and validate control systems. For a comprehensive guide, visit [this video](https://www.youtube.com/watch?v=uX5t8EivCaM).
+- **System Identification**: The process of building mathematical models based on measured data to design and validate control systems. For a comprehensive guide, visit [this video](https://www.youtube.com/watch?v=6F2YVsT9dOs).
 
 - **Koopman Linearization**: A method to analyze nonlinear dynamics by representing them through a linear operator, allowing for the application of linear system theory. For more on this topic, consider the [Koopman playlist](https://www.youtube.com/watch?v=K5CRbC4yqnk&list=PLMrJAkhIeNNSVXUvppZTYNHKQUD-oWys9).
 
