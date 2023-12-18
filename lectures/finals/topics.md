@@ -45,7 +45,7 @@ Students who opt for Technical Talks are required to prepare an in-depth present
 ### Talk Topics
 - **HJ Reachability & CBF**: Hamilton-Jacobi (HJ) reachability analysis and Control Barrier Functions (CBF) are methodologies used to ensure that control systems stay within safe operational boundaries. For an explanation of their relationship, watch [this video](https://www.youtube.com/watch?v=-PzULKLB0D4).
 
-- **Lyapunov Theory**: This is a framework for determining the stability of a system, where a Lyapunov function's behavior is used to infer system stability. For systems with inputs and outputs, check the [lecture slides](https://stanford.edu/class/ee363/lectures/io-lyap.pdf).
+- **Lyapunov Theory with Disturbances and Outputs**: This is a framework for determining the stability of a system, where a Lyapunov function's behavior is used to infer system stability. For systems with disturbances and outputs, check the [lecture slides](https://stanford.edu/class/ee363/lectures/io-lyap.pdf).
 
 - **LQR, iLQR, DDP**: These are optimization strategies for control systems, where LQR is suitable for linear systems and iLQR and DDP cater to non-linear systems. For insights into DDP, view [this lecture](https://www.youtube.com/watch?v=hUf5YhSptLs&list=PLZnJoM76RM6KugDT9sw5zhAmqKnGeoLRa&index=18).
 
@@ -57,7 +57,7 @@ Students who opt for Technical Talks are required to prepare an in-depth present
 
 - **Order Reduction in Linear Systems**: This involves simplifying complex linear systems to more manageable sizes while retaining their key characteristics, which is essential for control design and analysis. For a tutorial on this, watch [this video on Model Order Reduction](https://www.youtube.com/watch?v=FsLmBDfwQCY&list=PLMrJAkhIeNNQkv98vuPjO2X2qJO_UPeWR&index=3).
 
-- **System Identification**: The process of building mathematical models based on measured data to design and validate control systems. For a comprehensive guide, visit [this video](https://www.youtube.com/watch?v=6F2YVsT9dOs).
+- **System Identification**: The process of building mathematical models based on measured data to design and validate control systems. For a comprehensive guide, visit [this video](https://www.youtube.com/watch?v=6F2YVsT9dOs) and [this lecture](https://underactuated.mit.edu/sysid.html).
 
 - **Koopman Linearization**: A method to analyze nonlinear dynamics by representing them through a linear operator, allowing for the application of linear system theory. For more on this topic, consider the [Koopman playlist](https://www.youtube.com/watch?v=K5CRbC4yqnk&list=PLMrJAkhIeNNSVXUvppZTYNHKQUD-oWys9).
 
