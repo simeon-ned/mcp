@@ -14,3 +14,6 @@ to_sort/
 .jekyll-cache/
 *TODO
 .vscode/
+
+lectures_quarto/example/example_files
+lectures_quarto/example/example.html
