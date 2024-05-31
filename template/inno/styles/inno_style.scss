@@ -1,0 +1,279 @@
+/*-- scss:defaults --*/
+// https://camo.githubusercontent.com/410b3ab80570bcd5b470a08d84f93caa5b4962ccd994ebceeb3d1f78364c2120/687474703a2f2f692e696d6775722e636f6d2f776136363678672e706e67
+
+// Custom colours and variables
+$jet: #131516;
+$accent: #00740e;
+$accent2: #004d18;
+$accent3: #003411;
+$right-arrow: "\2192"; // Unicode character for right arrow
+
+
+// Default fonts
+// $presentation-font-size-root: 30px;
+// $presentation-h1-font-size: 1.5em;
+
+// Roboto font
+// @import url(https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i);
+// $font-family-sans-serif: "Roboto", sans-serif !default;
+// $presentation-font-size-root: 30px;
+
+// $presentation-heading-font: "Roboto", sans-serif !default;
+// $presentation-heading-color: $jet !default;
+// $presentation-heading-font-weight: 150;
+
+// CM fonts
+@import url(https://cdn.jsdelivr.net/gh/aaaakshat/cm-web-fonts@latest/fonts.css);
+
+$font-family-sans-serif: "Computer Modern Serif", serif !default;
+$presentation-font-size-root: 30px;
+
+$presentation-heading-font: "Computer Modern Serif", serif !default;
+$presentation-heading-color: $jet !default;
+$presentation-heading-font-weight: 150;
+$presentation-heading-line-height: 2;
+$presentation-block-margin: 28px;
+
+// colors
+// $body-bg: #f0f1eb !default;
+$body-color: $jet !default;
+$link-color: $accent !default;
+$selection-bg: #26351c !default;
+$code-color:	#83a698;//#fe8019; //$accent3 !default; //var(–quarto-hl-fu-color);
+// $code-color:	var(–quarto-hl-fu-color);
+// $light-bg-code-color:	#01912e;
+// $dark-bg-link-color:	#42affa;
+// $dark-bg-code-color:	#ffa07a;
+
+/*-- scss:rules --*/
+
+.reveal a {
+  line-height: 1.5em;
+}
+
+.reveal p {
+  font-weight: 200;
+  margin-top: 1.25em;
+}
+
+// title and headings
+
+#title-slide {
+  text-align: left;
+
+  .title {
+    color: $body-color;
+    font-size: 1.6em;
+    font-weight: 400;
+  }
+
+  .subtitle {
+    color: $accent;
+    // font-style: italic;
+    font-size: 1.4em;
+    margin-top: 0em;
+  }
+
+  .institute,
+  .quarto-title-affiliation,
+  .quarto-title-author-email {
+    font-style: italic;
+    font-size: 80%;
+    color: #7F7F7F;
+  }
+
+  .author,
+  .quarto-title-author-name {
+    color: $body-color;
+  }
+
+  .quarto-title-authors {
+    display: flex;
+    justify-content: left;
+
+    .quarto-title-author {
+      padding-left: 0em;
+      padding-right: 0em;
+      width: 100%;
+    }
+  }
+
+}
+
+
+.reveal h2 {
+  font-weight: 200;
+  font-size: 1.4em;
+}
+
+.reveal h3 {
+  color: $accent;
+  // font-style: italic;
+  font-weight: 200;
+  font-size: 1.2em;
+}
+
+.reveal h4 {
+  color: $accent2;
+  font-weight: 200;
+  margin-top: 1.25em;
+}
+
+// alerts etc.
+
+.alert {
+  color: $accent2;
+}
+
+.fg {
+  color: var(--col, $jet);
+}
+
+.bg {
+  background-color: var(--col, #fff);
+  padding: 0.1em;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+// lists
+
+// Unordered lists
+
+.reveal ul {
+  font-weight: 300;
+  padding-left: 16px;
+
+  li::marker {
+    color: mix($accent, white, 70%);
+  }
+}
+
+.reveal ul ul {
+  list-style: none;
+
+  li:before {
+    content: $right-arrow;
+    color: mix($accent, white, 60%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
+  }
+}
+
+// Ordered lists
+
+.reveal ol {
+  font-weight: 300;
+  padding-left: 16px;
+
+  li::marker {
+    color: $accent;
+  }
+}
+
+// // Move "hamburger" menu button to top right
+
+.reveal .slide-menu-button {
+  position: fixed;
+  top: 6px;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.reveal .slide-menu-button > * {
+  pointer-events: auto;
+}
+
+
+// Same for chalkboard buttons (with an offset)
+
+.reveal .slide-chalkboard-buttons {
+  position: fixed;
+  bottom: 12px;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  pointer-events: none;
+}
+
+.reveal .slide-chalkboard-buttons > * {
+  pointer-events: auto;
+}
+
+// .caption{
+//   text-align: center;
+// }
+
+
+.theorem {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  font-family: "Computer Modern Serif";
+  color: black;
+  border-radius: 10px;
+  background-color: #f0f1eb;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.theorem p {
+  padding: 15px 15px 15px 15px;
+}
+
+// Beamer-style button link environment
+
+.button {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-color: $accent;
+  border: 1px solid $accent;
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.button::before {
+  content: "▶";
+  margin-right: 5px;
+}
+
+// Special catch for etable environment to ensure these table images
+// don't overflow the slide.
+// See: https://lrberge.github.io/fixest/articles/etable_new_features.html
+
+.etable {
+  width: 100%;
+  height: calc(100% - 3em); /* Adjust 3em based on the height of your header, if necessary */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.etable img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
